@@ -1,0 +1,504 @@
+{
+    "data": [
+      {
+        "HIRAGANA": "あ",
+        "Katakana": "ア",
+        "Bangla": "আ",
+        "ROMAJI": "a"
+      },
+      {
+        "HIRAGANA": "い",
+        "Katakana": "イ",
+        "Bangla": "ই",
+        "ROMAJI": "i"
+      },
+  
+      {
+        "HIRAGANA": "う",
+        "Katakana": "উ",
+        "Bangla": "ウ",
+        "ROMAJI": "u"
+      },
+  
+      {
+        "HIRAGANA": "え",
+        "Katakana": "エ",
+        "Bangla": "এ",
+        "ROMAJI": "e"
+      },
+  
+      {
+        "HIRAGANA": "お",
+        "Katakana": "オ",
+        "Bangla": "ও",
+        "ROMAJI": "o"
+      },
+  
+      {
+        "HIRAGANA": "か",
+        "Katakana": "カ",
+        "Bangla": "কা",
+        "ROMAJI": "ka"
+      },
+  
+      {
+        "HIRAGANA": "き",
+        "Katakana": "キ",
+        "Bangla": "কি",
+        "ROMAJI": "ki"
+      },
+  
+      {
+        "HIRAGANA": "く",
+        "Katakana": "ク",
+        "Bangla": "কু",
+        "ROMAJI": "ku"
+      },
+  
+      {
+        "HIRAGANA": "け",
+        "Katakana": "ケ",
+        "Bangla": "কে",
+        "ROMAJI": "ke"
+      },
+  
+      {
+        "HIRAGANA": "こ",
+        "Katakana": "コ",
+        "Bangla": "কো",
+        "ROMAJI": "ko"
+      },
+  
+      {
+        "HIRAGANA": "が",
+        "Katakana": "ガ",
+        "Bangla": "গা",
+        "ROMAJI": "ga"
+      },
+  
+      {
+        "HIRAGANA": "ぎ",
+        "Katakana": "ギ",
+        "Bangla": "গি",
+        "ROMAJI": "gi"
+      },
+  
+      {
+        "HIRAGANA": "ぐ",
+        "Katakana": "グ",
+        "Bangla": "গু",
+        "ROMAJI": "gu"
+      },
+  
+      {
+        "HIRAGANA": "げ",
+        "Katakana": "ゲ",
+        "Bangla": "গে",
+        "ROMAJI": "ge"
+      },
+  
+      {
+        "HIRAGANA": "ご",
+        "Katakana": "ゴ",
+        "Bangla": "গো",
+        "ROMAJI": "go"
+      },
+  
+      {
+        "HIRAGANA": "さ",
+        "Katakana": "サ",
+        "Bangla": "সা",
+        "ROMAJI": "sa"
+      },
+  
+      {
+        "HIRAGANA": "し",
+        "Katakana": "シ",
+        "Bangla": "শি",
+        "ROMAJI": "shi"
+      },
+  
+      {
+        "HIRAGANA": "す",
+        "Katakana": "ス",
+        "Bangla": "সু",
+        "ROMAJI": "su"
+      },
+  
+      {
+        "HIRAGANA": "せ",
+        "Katakana": "セ",
+        "Bangla": "সে",
+        "ROMAJI": "se"
+      },
+  
+      {
+        "HIRAGANA": "そ",
+        "Katakana": "ソ",
+        "Bangla": "সো",
+        "ROMAJI": "so"
+      },
+  
+      {
+        "HIRAGANA": "ざ",
+        "Katakana": "ザ",
+        "Bangla": "যা",
+        "ROMAJI": "za"
+      },
+  
+      {
+        "HIRAGANA": "じ",
+        "Katakana": "ジ",
+        "Bangla": "জি",
+        "ROMAJI": "ji"
+      },
+  
+      {
+        "HIRAGANA": "ず",
+        "Katakana": "ズ",
+        "Bangla": "যু",
+        "ROMAJI": "zu"
+      },
+  
+      {
+        "HIRAGANA": "ぜ",
+        "Katakana": "ゼ",
+        "Bangla": "যে",
+        "ROMAJI": "ze"
+      },
+  
+      {
+        "HIRAGANA": "ぞ",
+        "Katakana": "ゾ",
+        "Bangla": "যো",
+        "ROMAJI": "zo"
+      },
+  
+      {
+        "HIRAGANA": "た",
+        "Katakana": "タ",
+        "Bangla": "তা",
+        "ROMAJI": "ta"
+      },
+  
+      {
+        "HIRAGANA": "ち",
+        "Katakana": "チ",
+        "Bangla": "চি",
+        "ROMAJI": "chi"
+      },
+  
+      {
+        "HIRAGANA": "つ",
+        "Katakana": "ツ",
+        "Bangla": "ৎসু",
+        "ROMAJI": "tsu"
+      },
+  
+      {
+        "HIRAGANA": "て",
+        "Katakana": "テ",
+        "Bangla": "তে",
+        "ROMAJI": "te"
+      },
+  
+      {
+        "HIRAGANA": "と",
+        "Katakana": "ト",
+        "Bangla": "তো",
+        "ROMAJI": "to"
+      },
+  
+      {
+        "HIRAGANA": "だ",
+        "Katakana": "ダ",
+        "Bangla": "দা",
+        "ROMAJI": "da"
+      },
+  
+      {
+        "HIRAGANA": "ぢ",
+        "Katakana": "ヂ",
+        "Bangla": "জি",
+        "ROMAJI": "ji"
+      },
+  
+      {
+        "HIRAGANA": "づ",
+        "Katakana": "ヅ",
+        "Bangla": "যু",
+        "ROMAJI": "zu"
+      },
+  
+      {
+        "HIRAGANA": "で",
+        "Katakana": "デ",
+        "Bangla": "দে",
+        "ROMAJI": "de"
+      },
+  
+      {
+        "HIRAGANA": "ど",
+        "Katakana": "ド",
+        "Bangla": "দো",
+        "ROMAJI": "do"
+      },
+  
+      {
+        "HIRAGANA": "な",
+        "Katakana": "ナ",
+        "Bangla": "না",
+        "ROMAJI": "na"
+      },
+  
+      {
+        "HIRAGANA": "に",
+        "Katakana": "ニ",
+        "Bangla": "নি",
+        "ROMAJI": "ni"
+      },
+  
+      {
+        "HIRAGANA": "ぬ",
+        "Katakana": "ヌ",
+        "Bangla": "নু",
+        "ROMAJI": "nu"
+      },
+  
+      {
+        "HIRAGANA": "ね",
+        "Katakana": "ネ",
+        "Bangla": "নে",
+        "ROMAJI": "ne"
+      },
+  
+      {
+        "HIRAGANA": "の",
+        "Katakana": "ノ",
+        "Bangla": "নো",
+        "ROMAJI": "no"
+      },
+  
+      {
+        "HIRAGANA": "は",
+        "Katakana": "ハ",
+        "Bangla": "হা",
+        "ROMAJI": "ha"
+      },
+  
+      {
+        "HIRAGANA": "ひ",
+        "Katakana": "ヒ",
+        "Bangla": "হি",
+        "ROMAJI": "hi"
+      },
+  
+      {
+        "HIRAGANA": "ふ",
+        "Katakana": "フ",
+        "Bangla": "ফু",
+        "ROMAJI": "fu"
+      },
+  
+      {
+        "HIRAGANA": "へ",
+        "Katakana": "ヘ",
+        "Bangla": "হে",
+        "ROMAJI": "he"
+      },
+  
+      {
+        "HIRAGANA": "ほ",
+        "Katakana": "ホ",
+        "Bangla": "হো",
+        "ROMAJI": "ho"
+      },
+  
+      {
+        "HIRAGANA": "ば",
+        "Katakana": "バ",
+        "Bangla": "বা",
+        "ROMAJI": "ba"
+      },
+  
+      {
+        "HIRAGANA": "び",
+        "Katakana": "ビ",
+        "Bangla": "বি",
+        "ROMAJI": "bi"
+      },
+  
+      {
+        "HIRAGANA": "ぶ",
+        "Katakana": "ブ",
+        "Bangla": "বু",
+        "ROMAJI": "bu"
+      },
+  
+      {
+        "HIRAGANA": "べ",
+        "Katakana": "ベ",
+        "Bangla": "বে",
+        "ROMAJI": "be"
+      },
+  
+      {
+        "HIRAGANA": "ぼ",
+        "Katakana": "ボ",
+        "Bangla": "বো",
+        "ROMAJI": "bo"
+      },
+  
+      {
+        "HIRAGANA": "ぱ",
+        "Katakana": "パ",
+        "Bangla": "পা",
+        "ROMAJI": "pa"
+      },
+  
+      {
+        "HIRAGANA": "ぴ",
+        "Katakana": "ピ",
+        "Bangla": "পি",
+        "ROMAJI": "pi"
+      },
+  
+      {
+        "HIRAGANA": "ぷ",
+        "Katakana": "プ",
+        "Bangla": "পু",
+        "ROMAJI": "pu"
+      },
+  
+      {
+        "HIRAGANA": "ぺ",
+        "Katakana": "ペ",
+        "Bangla": "পে",
+        "ROMAJI": "pe"
+      },
+  
+      {
+        "HIRAGANA": "ぽ",
+        "Katakana": "ポ",
+        "Bangla": "পো",
+        "ROMAJI": "po"
+      },
+  
+      {
+        "HIRAGANA": "ま",
+        "Katakana": "マ",
+        "Bangla": "মা",
+        "ROMAJI": "ma"
+      },
+  
+      {
+        "HIRAGANA": "み",
+        "Katakana": "ミ",
+        "Bangla": "মি",
+        "ROMAJI": "mi"
+      },
+  
+      {
+        "HIRAGANA": "む",
+        "Katakana": "ム",
+        "Bangla": "মু",
+        "ROMAJI": "mu"
+      },
+  
+      {
+        "HIRAGANA": "め",
+        "Katakana": "メ",
+        "Bangla": "মে",
+        "ROMAJI": "me"
+      },
+  
+      {
+        "HIRAGANA": "も",
+        "Katakana": "モ",
+        "Bangla": "মো",
+        "ROMAJI": "mo"
+      },
+  
+      {
+        "HIRAGANA": "や",
+        "Katakana": "ヤ",
+        "Bangla": "ইয়া",
+        "ROMAJI": "ya"
+      },
+  
+      {
+        "HIRAGANA": "ゆ",
+        "Katakana": "ユ",
+        "Bangla": "ইয়ু",
+        "ROMAJI": "yu"
+      },
+  
+      {
+        "HIRAGANA": "よ",
+        "Katakana": "ヨ",
+        "Bangla": "ইয়ো",
+        "ROMAJI": "yo"
+      },
+  
+      {
+        "HIRAGANA": "ら",
+        "Katakana": "ラ",
+        "Bangla": "রা",
+        "ROMAJI": "ra"
+      },
+  
+      {
+        "HIRAGANA": "り",
+        "Katakana": "リ",
+        "Bangla": "রি",
+        "ROMAJI": "ri"
+      },
+  
+      {
+        "HIRAGANA": "る",
+        "Katakana": "ル",
+        "Bangla": "রু",
+        "ROMAJI": "ru"
+      },
+  
+      {
+        "HIRAGANA": "れ",
+        "Katakana": "レ",
+        "Bangla": "রে",
+        "ROMAJI": "re"
+      },
+  
+      {
+        "HIRAGANA": "ろ",
+        "Katakana": "ロ",
+        "Bangla": "রো",
+        "ROMAJI": "ro"
+      },
+  
+      {
+        "HIRAGANA": "わ",
+        "Katakana": "ワ",
+        "Bangla": "ওয়া",
+        "ROMAJI": "wa"
+      },
+  
+      {
+        "HIRAGANA": "を",
+        "Katakana": "ヲ",
+        "Bangla": "ও",
+        "ROMAJI": "wo"
+      },
+  
+      {
+        "HIRAGANA": "ん",
+        "Katakana": "ン",
+        "Bangla": " ন্",
+        "ROMAJI": "n"
+      }
+  
+    ]
+  }
+  
+  
+  
+  

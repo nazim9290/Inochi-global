@@ -1,7 +1,6 @@
 // Make sure the path to the CSS file is correct
 import NavBar from './component/navbar';
 import MainCarusel from './component/mainCarusel';
-import Presntetion from './component/Presentetion';
 import Subsscribe from './component/subscribe';
 import Service from './component/Service';
 import Rapper from './component/Rapper';

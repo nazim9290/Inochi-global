@@ -1,7 +1,7 @@
 "use client"
 import { useState, createContext, useEffect } from "react";
 import axios from "axios";
-// import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const UserContext = createContext();
 
@@ -15,10 +15,10 @@ const UserProvider = ({ children }) => {
     setState(JSON.parse(window.localStorage.getItem("auth")));
   }, []);
 
-  // const router = useRouter();
+  const router = useRouter();
 
   const token = state && state.token ? state.token : "";
-  axios.defaults.baseURL = "http://localhost:5000/api"
+  axios.defaults.baseURL = "http://localhost:5000/api";
   axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
 
   axios.interceptors.response.use(
@@ -32,6 +32,7 @@ const UserProvider = ({ children }) => {
       if (res.status === 401 && res.config && !res.config.__isRetryRequest) {
         setState(null);
         window.localStorage.removeItem("auth");
+        router.push("/login");
       }
     }
   );

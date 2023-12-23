@@ -1,0 +1,10 @@
+/* MainCarousel.module.css */
+.carousel {
+    max-width: 600px; /* Adjust the max-width as needed */
+    margin: auto;
+  }
+  
+  .cur-height {
+    height: 300px; /* Adjust the height as needed */
+  }
+  

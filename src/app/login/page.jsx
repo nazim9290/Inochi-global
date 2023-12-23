@@ -1,4 +1,6 @@
 "use client"
+import { useRouter } from "next/navigation";
+import { UserContext } from "../component/router/UserRoute";
 
 import NavBar from "../component/navbar";
 import Subsscribe from '../component/subscribe'
@@ -8,18 +10,14 @@ import logo from "../../../public/imgages/1.jpg";
 import { useState } from "react";
 import MainBanner from "../component/MainBanner";
 import ContactForm from "../component/ContactForm";
+import LoginFrom from "../component/LoginFrom.jsx"
 
-
-const Register = () => {
+const Login = () => {
   return (
     <div>
       <NavBar />
-      <MainBanner title="Register" />
-
-      <ContactForm />
-
-
-      {/* from end */}
+      <MainBanner title="Login" />
+      <LoginFrom />
       <Subsscribe />
       <Fotter />
 
@@ -27,4 +25,4 @@ const Register = () => {
   );
 }
 
-export default Register;
+export default Login;

@@ -2,12 +2,13 @@ import Image from "next/image"
 import logo from "../../../public/imgages/LOGO.png"
 const Fotter=()=>{
     return(
-        <footer>
+<footer>
   <div className="footer">
     <div className="row mb-4">
-      <div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center">
-        <Image src={logo} alt="Bootstrap" width={30} height={30} className="mt-3 mb-3" /><br />
-        <p className="text-start mx-4">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+      <div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+        <Image src={logo} alt="Bootstrap" style={{marginLeft: '2vw'}} width={60} height={60} className="mt-3 mb-3" /><br />
+        <p className="text-start mt-4 ms-1" style={{marginLeft: '2vw !important'}}>ACME Industries Ltd.<br />
+          Providing reliable tech since 1992</p>
       </div>
       <div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
         <p><b className="text-uppercase">service</b></p><br />
@@ -33,6 +34,7 @@ const Fotter=()=>{
     <p className="text-center">Copyright © 2023-All right reserved by ACME industry LTD.</p>
   </div>
 </footer>
+
     )
 }
 export default Fotter ;

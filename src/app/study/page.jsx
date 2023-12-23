@@ -1,15 +1,17 @@
 import NavBar from "../component/navbar";
-import Testmonial from '../component/testmonial'
+import BlogData from '../component/BlogData'
 import Fotter from '../component/Foter';
 import Service from "../component/Service";
 import Subsscribe from "../component/subscribe";
-import WellStarter from '../component/WellStarter'
-
+import StudyJapan from '../component/StudyJapan'
+import MainBanner from "../component/MainBanner";
 const Study = () => {
     return (
         <div>
             <NavBar />
-            <WellStarter />       
+            <MainBanner title="STUDY-SETTLE-JAPAN"  />
+            <StudyJapan /> 
+            <BlogData/>      
             <Subsscribe/>
             <Fotter/>
         </div>
