@@ -1,6 +1,6 @@
 .sidebar{
     min-height: 100vh;
-    background: #2F323A;
+    background: hsl(0, 0%, 100%);
     box-shadow: 2px 3px 4px 4px grey;
 }
 a{

@@ -1,6 +1,6 @@
 "use client";
 
-import CreateBlog from '../component/createBlog';
+import CreateBlog from '../../component/createBlog';
 const Page = () => {
   return (
     <div>

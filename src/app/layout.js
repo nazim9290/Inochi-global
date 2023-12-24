@@ -1,8 +1,8 @@
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
 import './globals.css'
 import "bootstrap/dist/css/bootstrap.min.css"; // Import bootstrap CSS
 import { UserProvider } from '@/context';
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 import 'popper.js';
 import 'jquery';
 import Head from 'next/head';
@@ -15,10 +15,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-<Head>
-<link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css"></link>
-</Head>
-      <body className={inter.className}>
+
+      <body>
       <div>
       <UserProvider>
       {children}
