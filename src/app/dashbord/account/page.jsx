@@ -5,7 +5,7 @@ const Account = () => {
     return (
         <div className="d-flex">
             <SideNavbar />
-            <div className="w-75" style={{ marginLeft: 'auto' }}>
+            <div className="w-74" style={{ marginLeft: 'auto' }}>
                 <p>Account page </p>
 
             </div>

@@ -1,14 +1,42 @@
+// "use client"
+// import SideNavbar from "@/app/component/SideNavbar";
+// import Foter from "@/app/component/Foter"
+
+// const Dashbord = () => {
+//   return (
+//     <>
+//       <div className="d-flex">
+//       <SideNavbar />
+//       <div className="w-75" style={{ marginLeft: 'auto' }}>
+//          <p>Home page for tes  ......</p>     
+//       </div>
+//     </div>
+//     <Foter />
+//     </>
+//   );
+// };
+
+// export default Dashbord;
 "use client"
-
-
-import Layout from '../component/layout';
-
-function Dashbord() {
+import SideNavbar from "@/app/component/SideNavbar";
+import Foter from "@/app/component/Foter";
+const Dashbord = () => {
   return (
-    <Layout>
-      {/* Page content goes here */}
-    </Layout>
+    <>
+        <div className="d-flex">
+          <SideNavbar />
+          <div className="w-75" style={{ marginLeft: 'auto' }}>
+            <p>Home page for test ......</p>
+          </div>
+        </div>
+        <div className="d-flex">
+          <div className="w-100" style={{ marginTop: 'auto'}}>
+ 
+ <Foter/>
+           </div>
+        </div>
+    </>
   );
-}
+};
 
 export default Dashbord;

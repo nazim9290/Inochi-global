@@ -1,18 +1,24 @@
-.sidebar{
+
+  .sidebar {
     min-height: 100vh;
     background: hsl(0, 0%, 100%);
     box-shadow: 2px 3px 4px 4px grey;
+    margin-left: 0px;
 }
-a{
+
+.sidebar-container > div {
+    padding: 10px 20px;
+}
+
+.sidebar-container > div > a {
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
     color: black;
 }
-.sidebar-container>div{
-    padding: 10px 20px;
+.active {
+    /* Styling for the active class */
+    background: #d9d9d9;
+    /* Add any other styles as needed */
 }
-.sidebar-container>div>svg{
-    color: #fff;
-    margin-right: 10px;
-}
+
