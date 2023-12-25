@@ -10,7 +10,6 @@ const SideNavbar = () => {
   const pathname = usePathname();
 
   const isActive = (path) => {
-    console.log(pathname, "test");
     return pathname === path;
   };
 
@@ -30,12 +29,16 @@ const SideNavbar = () => {
           <div className={`sidebar-item ${isActive('/student') ? 'active' : ''}`}>
             <Link href="/student">Students</Link>
           </div>
+          <div className={`sidebar-item ${isActive('/dashbord/classes') ? 'active' : ''}`}>
+            <Link href="/dashbord/classes">My Classes</Link>
+          </div>
           <div className={`sidebar-item ${isActive('/dashbord/blog') ? 'active' : ''}`}>
             <Link href="/dashbord/blog">Create Blog</Link>
           </div>
           <div className={`sidebar-item ${isActive('/dashbord/account') ? 'active' : ''}`}>
             <Link href="/dashbord/account">Accounts</Link>
           </div>
+          {/* Clasess */}
           {/* Add similar checks for other links */}
         </div>
       </div>

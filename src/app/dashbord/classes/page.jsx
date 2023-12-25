@@ -1,22 +1,19 @@
 "use client"
 import SideNavbar from "@/app/component/SideNavbar";
-import CreateBlog from '../../component/createBlog';
 import Foter from "@/app/component/Foter";
-import ChartComponent from "@/app/component/ChartComponent";
-import ChartTable from "@/app/component/ChartTable";
-
-const Account = () => {
-  return (
-    <>
+import YouTubePlaylist from "@/app/component/YouTubePlaylist";
+const Classes = () => {
+    return (
+        <>
       <div className="d-flex">
       <SideNavbar />
       <div className="w-75" style={{ marginLeft: 'auto' }}>
-          <ChartComponent />
+      {/* <YouTubePlaylist /> */}
       </div>
     </div>
     <Foter/>
     </>
-  );
+    );
 };
 
-export default Account;
+export default Classes;

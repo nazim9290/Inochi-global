@@ -9,13 +9,11 @@ const Blog = () => {
       <div className="d-flex">
       <SideNavbar />
       <div className="w-75" style={{ marginLeft: 'auto' }}>
-<CreateBlog/>
+        <CreateBlog/>
       </div>
-
     </div>
     <Foter/>
     </>
-
   );
 };
 
