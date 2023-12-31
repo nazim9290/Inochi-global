@@ -15,10 +15,9 @@ const ChartComponent = () => {
           console.error('Error fetching data:', error);
         });
     }, []);
-  console.log(jsonData)
     return (
       <div>
-        <h1>JSON Data:</h1>
+        <h1 className="text-center">Hiragana</h1>
         {jsonData ? (
           <ChartTable jsonData={jsonData} />
         ) : (

@@ -1,24 +1,22 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import ModelChar from './ModelChar'; // Assuming you have a ModalExample component
-
 const ChartTable = ({ jsonData }) => {
-  const itemsPerLine = 5;
   const [selectedItem, setSelectedItem] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleItemClick = (item) => {
-    setSelectedItem(item);
+  const handleTdClick = (item) => {
+    console.log(item)
+   
   };
-
-  const closeModal = () => {
-    setSelectedItem(null);
-  };
-
+ 
+  const itemsPerLine = 5; // 5 items + 1 'arefin'
+ 
   return (
     <div>
       <h2 className="text-center">alphabet chart</h2>
       <table className="table text-center" style={{ width: '60%' }}>
+      
         <thead>
           <tr>
             <th scope="col">Column 1</th>
@@ -32,9 +30,9 @@ const ChartTable = ({ jsonData }) => {
         <tbody>
           {jsonData.map((item, index) => (
             <React.Fragment key={index}>
-              <td onClick={() => handleItemClick(item)}>{item.HIRAGANA} <br/>
-              {item.Katakana}  {item.ROMAJI}
-              
+              <td onClick={() => handleTdClick(item)}>
+                {item.HIRAGANA} <br />
+                {item.Bangla} {item.ROMAJI}
               </td>
               {(index + 1) % itemsPerLine === 0 && (
                 <>
@@ -48,14 +46,7 @@ const ChartTable = ({ jsonData }) => {
           ))}
         </tbody>
       </table>
-
-      {selectedItem && (
-        <ModelChar
-          isOpen={true} // Pass a prop to control the modal visibility
-          toggle={closeModal}
-          selectedItem={selectedItem}
-        />
-      )}
+      
     </div>
   );
 };
