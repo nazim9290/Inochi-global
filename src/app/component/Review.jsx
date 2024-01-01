@@ -12,15 +12,11 @@ const Review = () => {
   const router = useRouter();
 
   const submithandle = async (e) => {
-     e.preventDefault();
 
-     if (!state || !state.token) {
-       // Redirect to login or show a message for unauthenticated users
-       router.push("/login");
-       return;
-     }
+
     e.preventDefault();
     try {
+      console.log(review)
       setLoading(true);
       const { data } = await axios.post("/create-review", { review });
       setMessage(data.message); // Assuming the server returns a message property
