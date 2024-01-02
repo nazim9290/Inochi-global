@@ -1,5 +1,6 @@
 import React from 'react';
 import html2pdf from 'html2pdf.js';
+import Image from 'next/image';
 
 const CertificatePage = () => {
   const generatePDF = () => {
@@ -11,7 +12,7 @@ const CertificatePage = () => {
     <div>
       <h1>Your Certificate</h1>
       <div id="certificate-container">
-        <img src="/certificate.jpg" alt="Certificate" />
+        <Image src="/certificate.jpg" alt="Certificate" />
       </div>
       <button onClick={generatePDF}>Generate PDF</button>
     </div>

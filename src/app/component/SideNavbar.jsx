@@ -35,11 +35,15 @@ const SideNavbar = () => {
           <div className={`sidebar-item ${isActive('/dashbord/blog') ? 'active' : ''}`}>
             <Link href="/dashbord/blog">Create Blog</Link>
           </div>
+          <div className={`sidebar-item ${isActive('/dashbord/audio') ? 'active' : ''}`}>
+            <Link href="/dashbord/audio">Audio</Link>
+          </div>
+           <div className={`sidebar-item ${isActive('/dashbord/reviewcreate') ? 'active' : ''}`}>
+            <Link href="/dashbord/reviewcreate">Give Us Your FeedBack</Link>
+          </div>
           <div className={`sidebar-item ${isActive('/dashbord/account') ? 'active' : ''}`}>
             <Link href="/dashbord/account">Accounts</Link>
           </div>
-          {/* Clasess */}
-          {/* Add similar checks for other links */}
         </div>
       </div>
     </>

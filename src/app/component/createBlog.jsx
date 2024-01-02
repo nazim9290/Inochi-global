@@ -57,39 +57,7 @@ const CreateBlog = () => {
   };
 
   return (
-    // <div>
-    //   <label>Title:</label>
-    //   <input
-    //     type="text"
-    //     value={title}
-    //     onChange={(e) => setTitle(e.target.value)}
-    //   />
-    //   <label>Content:</label>
-    //   <input
-    //     type="text"
-    //     value={content}
-    //     onChange={(e) => setContent(e.target.value)}
-    //   />
-    //   <label>Category:</label>
-    //   <select value={category} onChange={handleCategoryChange}>
-    //     <option value="" disabled>Select a category</option>
-    //     <option value="category1">Category 1</option>
-    //     <option value="category2">Category 2</option>
-    //     <option value="category3">Category 3</option>
-    //     <option value="category4">Category 4</option>
-    //     <option value="category5">Category 5</option>
-    //   </select>
-    //   <label>Image:</label>
-    //   <input type="file" onChange={handleImageChange}
-    //   />
 
-    //   <button onClick={handleSubmit}
-    //     disabled={!id.id && id.id !== 0}
-
-    //   >Submit</button>
-    //   {successMessage && <p>{successMessage}</p>}
-
-    // </div>
     <div className="p-4 w-100 d-flex justify-content-center">
       <div className="w-100 d-flex flex-column align-items-center">
         <h3 className="text-center">Create a Blog</h3>

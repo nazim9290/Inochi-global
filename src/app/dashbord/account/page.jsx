@@ -27,7 +27,6 @@ import SideNavbar from '@/app/component/SideNavbar';
 import Foter from '@/app/component/Foter';
 import TopBanner from '@/app/component/TopBanner';
 import ChartComponent from '@/app/component/ChartComponent';
-import ChartTable from '@/app/component/ChartTable';
 import Link from 'next/link';
 
 const Account = () => {
@@ -82,7 +81,7 @@ const Account = () => {
           {sortOption === 'default' && <ChartComponent />}
           {sortOption === 'option1' && <ChartComponent />}
           {sortOption === 'option2' && <TopBanner />}
-          {sortOption === 'option3' && <ChartTable />}
+          {sortOption === 'option3' && <ChartComponent />}
         </div>
       </div>
       <Foter />

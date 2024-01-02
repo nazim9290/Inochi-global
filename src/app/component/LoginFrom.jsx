@@ -23,17 +23,17 @@ const LoginForm = () => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = async(e) => {
+  const handleSubmit = async (e) => {
     try {
-        e.preventDefault();
-    setLoading(true);
+      e.preventDefault();
+      setLoading(true);
 
-    // Perform login logic (e.g., send data to the server)
-     const {data}=await axios.post("/login",{
+      // Perform login logic (e.g., send data to the server)
+      const { data } = await axios.post("/login", {
         password,
         email
-     })
-     setState({
+      })
+      setState({
         user: data.user,
         token: data.token,
       });
@@ -41,33 +41,42 @@ const LoginForm = () => {
       window.localStorage.setItem("auth", JSON.stringify(data));
       router.push("/");
     } catch (error) {
-       console.log("error") 
+      console.log("error")
     }
 
-    
-};
-if (state && state.token) router.push("/");
+
+  };
+  if (state && state.token) router.push("/");
 
 
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <label>Email:</label>
-        <input
-          type="email"
-          value={email}
-          onChange={handleEmailChange}
-          required
-        />
-
-        <label>Password:</label>
-        <input
-          type="password"
-          value={password}
-          onChange={handlePasswordChange}
-          required
-        />
-
+        <div className="mb-3">
+          <label htmlFor="exampleFormControlInput1" className="form-label">Name</label>
+          <input type="text"
+            className="form-control"
+            placeholder="Enter your email"
+            value={email}
+            onChange={handleEmailChange}
+            required />
+          <div className="invalid-feedback">
+            Please enter a name.
+          </div>
+        </div>
+        {/*  */}
+        <div className="mb-3">
+          <label htmlFor="exampleFormControlInput1" className="form-label">Password:</label>
+          <input type="text"
+            className="form-control"
+            placeholder="Enter your email"
+            value={password}
+            onChange={handlePasswordChange}
+            required />
+          <div className="invalid-feedback">
+            Please enter Your Password.
+          </div>
+        </div>
         <button type="submit">Login</button>
       </form>
     </div>

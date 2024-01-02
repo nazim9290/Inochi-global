@@ -1,19 +1,19 @@
 "use client"
 import SideNavbar from "@/app/component/SideNavbar";
 import Foter from "@/app/component/Foter";
-import Review from "@/app/component/review"
-const ReviewCreate = () => {
-  return (
-    <>
+import Totalsection from "@/app/component/Totalsection";
+const Classes = () => {
+    return (
+        <>
       <div className="d-flex">
       <SideNavbar />
       <div className="w-75" style={{ marginLeft: 'auto' }}>
-<Review/>
+<Totalsection/>
       </div>
     </div>
     <Foter/>
     </>
-  );
+    );
 };
 
-export default ReviewCreate;
+export default Classes;
