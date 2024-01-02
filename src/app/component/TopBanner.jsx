@@ -23,7 +23,8 @@ const TopBanner = ({ title, id }) => {
         <>
           <div className="image-container mb-3">
             {/* Display the image */}
-            <Image src={storedBase64Data} alt="klff" className="w-100 banner_height" />
+            <Image src={storedBase64Data} alt="klff" width={0}
+  height={0} className="w-100 banner_height" />
 
             {/* Overlay with the title */}
             <div className="text-overlay">
