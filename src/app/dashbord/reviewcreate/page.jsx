@@ -1,7 +1,7 @@
 "use client"
 import SideNavbar from "@/app/component/SideNavbar";
 import Foter from "@/app/component/Foter";
-import Review from "@/app/component/review"
+import Review from "@/app/component/Review"
 const ReviewCreate = () => {
   return (
     <>
