@@ -1,42 +1,78 @@
-import React, { useState } from 'react';
-import ImageConverter from './ImageConverter';
-import Image from 'next/image';
+// MainCarousel.jsx
+"use client"
+import React, { useState, useEffect, useCallback } from "react";
+import Image from "next/image";
+import axios from "axios";
+import ImageConverter from "./ImageConverter"; // Update the path accordingly
+import styles from "./MainCarousel.module.css";
 
-const PendingCarusel = ({ data, handleDelete, handleEdit, handleApprove }) => {
-  const [storedBase64Data, setStoredBase64Data] = useState('');
-  const handleBase64Data = (data) => {
-    setStoredBase64Data(data);
+const MainCarousel = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [caruselData, setCaruselData] = useState([]);
+  const [storedBase64Data, setStoredBase64Data] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  const handlePrev = () => {
+    setActiveIndex((prevIndex) => (prevIndex === 0 ? caruselData.length - 1 : prevIndex - 1));
   };
 
-  console.log(data.image.public_id);
+  const handleNext = useCallback(() => {
+    setActiveIndex((prevIndex) => (prevIndex === caruselData.length - 1 ? 0 : prevIndex + 1));
+  }, [caruselData]);
+
+  const fetchUserPosts = async () => {
+    try {
+      setLoading(true);
+      const response = await axios.get("/published-carusels");
+      console.log("response", response.data);
+      setCaruselData(response.data.publishedCarusels);
+    } catch (err) {
+      console.log(err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchUserPosts();
+
+    const intervalId = setInterval(() => {
+      handleNext();
+    }, 5000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [handleNext]);
+
+  const handleBase64Data = (base64Data) => {
+    setStoredBase64Data(base64Data);
+  };
 
   return (
-    <>
-      <ImageConverter id={data.image.public_id} onBase64Data={handleBase64Data} />
-      {storedBase64Data ? (
-        <div className="my-5">
-          <div className="row my-lg-4">
-            <div>
-              <div className="card shadow rounded">
-                <div className="card-body text-center">
-                  <Image src={storedBase64Data} alt="Bootstrap" width={150} height={150} /><br />
-                  <p className="text-center mb-5"><b>{data.category}</b></p>
-
-                  {/* Buttons for delete, edit, and approve */}
-                  <div className="d-flex justify-content-around">
-                    <button onClick={() => handleDelete(data._id)}>Delete</button>
-                    <button onClick={() => handleApprove(data._id)}>Approve</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div id="carouselExample" className={`carousel slide ${styles.carousel}`}>
+      {loading && <p>Loading...</p>}
+      <div className="carousel-inner">
+        {caruselData.map((item, index) => (
+          <div key={item._id} className={`carousel-item ${activeIndex === index ? "active" : ""}`}>
+            <ImageConverter id={item.image.public_id} onBase64Data={handleBase64Data} />
+            {storedBase64Data && (
+              <Image src={storedBase64Data} alt={`Team ${index + 1}`} width={150} height={150} />
+            )}
           </div>
-        </div>
-      ) : (
-        <></>
-      )}
-    </>
+        ))}
+      </div>
+
+      <button className="carousel-control-prev" type="button" onClick={handlePrev}>
+        <span className="carousel-control-prev-icon" aria-hidden="true" />
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button className="carousel-control-next" type="button" onClick={handleNext}>
+        <span className="carousel-control-next-icon" aria-hidden="true" />
+        <span className="visually-hidden">Next</span>
+      </button>
+    </div>
   );
 };
 
-export default PendingCarusel;
+export default MainCarousel;

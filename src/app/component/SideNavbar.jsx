@@ -41,6 +41,9 @@ const SideNavbar = () => {
            <div className={`sidebar-item ${isActive('/dashbord/reviewcreate') ? 'active' : ''}`}>
             <Link href="/dashbord/reviewcreate">Give Us Your FeedBack</Link>
           </div>
+          <div className={`sidebar-item ${isActive('/dashbord/address') ? 'active' : ''}`}>
+            <Link href="/dashbord/address">Address</Link>
+          </div>
           <div className={`sidebar-item ${isActive('/dashbord/account') ? 'active' : ''}`}>
             <Link href="/dashbord/account">Accounts</Link>
           </div>

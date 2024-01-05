@@ -18,7 +18,7 @@ const UserProvider = ({ children }) => {
   const router = useRouter();
 
   const token = state && state.token ? state.token : "";
-  axios.defaults.baseURL = "http://45.77.247.238:5000/api";
+  axios.defaults.baseURL = "http://localhost.:5000/api";
   axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
 
   axios.interceptors.response.use(
