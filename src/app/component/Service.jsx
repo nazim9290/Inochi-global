@@ -14,7 +14,7 @@ const Service = () => {
 
   const fetchUserPosts = async () => {
     try {
-      const { data } = await axios.get("/blogs-service");
+      const { data } = await axios.get("api/blogs-service");
       // console.log("user posts => ", data.publishedstudy);
       setBlogs(data.publishedstudy);
       setLoading(false); // Set loading to false when data is fetched

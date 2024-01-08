@@ -23,7 +23,7 @@ const MainCarousel = () => {
   const fetchUserPosts = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("/published-carusels");
+      const response = await axios.get("api/published-carusels");
       console.log("response", response.data);
       setCaruselData(response.data.publishedCarusels);
     } catch (err) {

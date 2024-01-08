@@ -8,7 +8,7 @@ const Classes = () => {
       <div className="d-flex">
       <SideNavbar />
       <div className="w-75" style={{ marginLeft: 'auto' }}>
-      {/* <YouTubePlaylist /> */}
+      <YouTubePlaylist />
       </div>
     </div>
     <Foter/>

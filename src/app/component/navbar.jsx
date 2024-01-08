@@ -5,7 +5,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import logo from "../../../public/imgages/LOGO.png";
 import { Navbar as BootstrapNavbar, Nav, Container, NavDropdown } from 'react-bootstrap';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Navbar = () => {
   const [isNavbarExpanded, setIsNavbarExpanded] = useState(false);
 
@@ -42,10 +46,19 @@ const Navbar = () => {
           <div className="wrapper">
             <BootstrapNavbar bg="light" expand="lg" className="navbar navbar-expand-lg">
               <Container fluid>
-                <a href="#" className="fa fa-facebook" />
-                <a href="#" className="fa fa-twitter" />
-                <a href="#" className="fa fa-instagram" />
-                <a href="#" className="fa fa-youtube" />
+                <a href=" https://www.facebook.com/inochi.education" >
+                <FacebookRoundedIcon />
+                </a>
+                <a href="#"  >
+                  <InstagramIcon />
+                </a>
+
+               <a href="https://www.youtube.com/@inochiGlobalEducation" >
+                  <YouTubeIcon />
+                </a>
+                <a href="https://www.linkedin.com/company/inochi-"  >
+                  <LinkedInIcon  />
+                </a>
                 <BootstrapNavbar.Toggle aria-controls="navbarNav" onClick={handleNavbarToggle} />
                 <BootstrapNavbar.Collapse id="navbarNav">
                   <Nav className="navbar-nav mx-auto">

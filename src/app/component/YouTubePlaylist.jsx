@@ -7,7 +7,7 @@ const YouTubePlaylist = () => {
     width: '640',
     playerVars: {
       listType: 'playlist',
-      list: 'PL_XxuZqN0xVBfji5SwKd-CQijtdmcUTMU', // Replace with your actual YouTube playlist ID
+      list: 'PLZz-q184NOpRTD01069AoVr0C_wHaGSAK', // Replace with your actual YouTube playlist ID
       autoplay: 1,
     },
   };

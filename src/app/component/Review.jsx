@@ -18,7 +18,7 @@ const Review = () => {
     try {
       console.log(review)
       setLoading(true);
-      const { data } = await axios.post("/create-review", { review });
+      const { data } = await axios.post("api/create-review", { review });
       setMessage(data.message); // Assuming the server returns a message property
     } catch (error) {
       setError("An error occurred while submitting the review.");

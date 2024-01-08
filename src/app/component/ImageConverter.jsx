@@ -10,7 +10,7 @@ const ImageConverter = ({ id, onBase64Data }) => {
     const fetchData = async () => {
       try {
         if (id) {
-          const response = await axios.get(`/images/${id}`);
+          const response = await axios.get(`api/images/${id}`);
           // console.log('GET request response:', response.data);
 
           setBase64Data(response.data.url);

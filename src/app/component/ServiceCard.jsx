@@ -4,23 +4,19 @@ import ImageConverter from './ImageConverter';
 import Image from 'next/image';
 
 const ServiceCard = ({ data }) => {
-    const [storedBase64Data, setStoredBase64Data] = useState('');
-    const handleBase64Data = (data) => {
-        setStoredBase64Data(data);
-    };
+  
     // console.log(data.image)
     return (
         <>
-            <ImageConverter id={data.image.public_id} onBase64Data={handleBase64Data} />
             {
-                storedBase64Data ? (<>
+                data.image ? (<>
                     <div className="my-5">
 
 <div className="row my-lg-4">
     <div>
         <div className="card shadow rounded">
             <div className="card-body text-center">
-                <Image src={storedBase64Data} alt="Bootstrap" width={150} height={150} /><br />
+                <Image src={data.image.url} alt="Bootstrap" width={150} height={150} /><br />
                 <p className="text-center mb-5"><b>{data.title}</b></p>
                 <p className="text-center mb-5"><b>{data.content}</b></p>
 

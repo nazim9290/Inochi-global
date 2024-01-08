@@ -47,7 +47,7 @@ const ContactForm = () => {
         }
         setLoading(true);
         try {
-            const { data } = await axios.post("/contact", {
+            const { data } = await axios.post("api/contact", {
                 name,
                 phone,
                 email,

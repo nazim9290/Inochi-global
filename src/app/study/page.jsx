@@ -1,5 +1,5 @@
 import NavBar from "../component/navbar";
-import BlogData from '../component/BlogData'
+import StudyData from '../component/StudyData'
 import Fotter from '../component/Foter';
 import Service from "../component/Service";
 import Subsscribe from "../component/subscribe";
@@ -11,7 +11,7 @@ const Study = () => {
             <NavBar />
             <MainBanner title="STUDY-SETTLE-JAPAN"  />
             <StudyJapan /> 
-            <BlogData/>      
+            <StudyData/>      
             <Subsscribe/>
             <Fotter/>
         </div>

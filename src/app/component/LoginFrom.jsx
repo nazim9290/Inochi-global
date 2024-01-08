@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import { UserContext } from "../../context";
 
 const LoginForm = () => {
-  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -27,12 +27,13 @@ const LoginForm = () => {
     try {
       e.preventDefault();
       setLoading(true);
-
+console.log(phone,password)
       // Perform login logic (e.g., send data to the server)
-      const { data } = await axios.post("/login", {
+      const { data } = await axios.post("http://45.77.247.238:5000/api/login", {
         password,
-        email
+        phone
       })
+      console.log(data)
       setState({
         user: data.user,
         token: data.token,
@@ -54,12 +55,14 @@ const LoginForm = () => {
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="exampleFormControlInput1" className="form-label">Name</label>
-          <input type="text"
-            className="form-control"
-            placeholder="Enter your email"
-            value={email}
-            onChange={handleEmailChange}
-            required />
+          <input
+                                    type="number"
+                                    className="form-control"
+                                    placeholder="Enter your Mobile number"
+                                    value={phone}
+                                    onChange={(e) => setPhone(e.target.value)}
+                                    required
+                                /> 
           <div className="invalid-feedback">
             Please enter a name.
           </div>

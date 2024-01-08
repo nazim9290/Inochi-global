@@ -92,7 +92,7 @@ const MainCarousel = ({ caruselData }) => {
       if (currentItem) {
         const fetchData = async () => {
           try {
-            const response = await axios.get(`/images/${currentItem.image.public_id}`);
+            const response = await axios.get(`api/images/${currentItem.image.public_id}`);
             setBase64Data(response.data.url);
           } catch (error) {
             console.error('Error fetching data:', error);

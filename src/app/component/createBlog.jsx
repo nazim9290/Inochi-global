@@ -18,20 +18,22 @@ const CreateBlog = () => {
     const file = e.target.files[0];
     let formData = new FormData();
     formData.append("image", file);
+    // console.log([...formData]);
     setUploading(true);
     try {
-      const { data } = await axios.post("/upload", formData);
-      setId({
-        id: data.public_id,
+      const { data } = await axios.post("api/upload-image-file", formData);
+      // console.log("uploaded image => ", data);
+      setImage({
+        url: data.url,
+        public_id: data.public_id,
       });
       setUploading(false);
     } catch (err) {
-      console.error('Error uploading image:', err);
+      console.log(err);
       setUploading(false);
-      setSuccessMessage('');
-      setErrorMessage("Failed to upload image. Please try again.");
     }
   };
+  
 
 
   const handleCategoryChange = (event) => {
@@ -40,9 +42,8 @@ const CreateBlog = () => {
 
   const handleSubmit = async () => {
     try {
-      const public_id = id.id;
-      const { data } = await axios.post("/create-blog", {
-        public_id,
+      const { data } = await axios.post("api/create-blog", {
+        image,
         title,
         content,
         category,

@@ -15,7 +15,7 @@ const Contact = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('/conctact-page');
+        const response = await axios.get('api/conctact-page');
         const firstContacPage = response.data.contacpages[0];
         if (firstContacPage) {
           let fetchedId = firstContacPage.image.public_id;

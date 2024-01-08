@@ -9,15 +9,14 @@ import { useState } from "react";
 import MainBanner from "../component/MainBanner";
 import ContactForm from "../component/ContactForm";
 
-
+import RegistrationForm from "../component/registrationForm"
 const Register = () => {
   return (
     <div>
       <NavBar />
       <MainBanner title="Register" />
 
-      <ContactForm />
-
+<RegistrationForm/>
 
       {/* from end */}
       <Subsscribe />

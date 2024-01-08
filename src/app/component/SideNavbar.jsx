@@ -1,14 +1,26 @@
 "use client"
-import React, { useEffect } from 'react'
+import React, { useEffect ,useContext, useState} from 'react'
 import Link from 'next/link';
 import "./Sidebar.css";
 import logo from "../../../public/imgages/LOGO.png"
 import Image from 'next/image';
 import { usePathname } from 'next/navigation'
+import { UserContext } from "../../context";
 
 const SideNavbar = () => {
   const pathname = usePathname();
+  const [state, setState] = useContext(UserContext);
+  const [name, setName] = useState("");
+  const [image, setImage] = useState({});
 
+  useEffect(() => {
+    if (state && state.user) {
+        setName(state.user.name)
+        setImage(state.user.image)
+
+    }
+}, [state]);
+console.log(image.public_id)
   const isActive = (path) => {
     return pathname === path;
   };
@@ -17,7 +29,19 @@ const SideNavbar = () => {
     <>
       <div className='sidebar'>
         <div className='img-container text-center'>
-          <Image src={logo} alt="admin avatar" />
+{Image ?
+(
+  <>
+  <Image src={image.public_url} width={30} height={30} alt="admin avatar" />
+
+  </>
+):(
+<>
+<Image src={logo} width={30} height={30} alt="admin avatar" />
+
+</>
+)
+}
         </div>
         <h6 className=' text-center'>Rafiq Islam</h6>
 

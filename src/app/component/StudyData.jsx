@@ -4,7 +4,7 @@ import ImageConverter from './ImageConverter';
 import axios from 'axios';
 import BlogCard from './BlogCard';
 
-const BlogData = () => {
+const StudyData = () => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     fetchUserPosts();
@@ -12,9 +12,9 @@ const BlogData = () => {
 
   const fetchUserPosts = async () => {
     try {
-      const { data } = await axios.get("api/published-blogs");
-      // console.log("user posts => ", data.publishedBlogs);
-      setBlogs(data.publishedBlogs);
+      const { data } = await axios.get("api/blogs-study");
+      console.log("user posts => ", data.publishedstudy);
+      setBlogs(data.publishedstudy);
     } catch (err) {
       console.log(err);
     }
@@ -33,4 +33,4 @@ const BlogData = () => {
   );
 };
 
-export default BlogData;
+export default StudyData;

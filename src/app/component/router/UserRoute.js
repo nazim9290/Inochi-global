@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
@@ -9,29 +10,40 @@ const UserRoute = ({ children }) => {
   const [state] = useContext(UserContext);
 
   useEffect(() => {
-    if (state && state.token) getCurrentUser();
-  }, [state && state.token]);
+    const fetchCurrentUser = async () => {
+      try {
+        const { data } = await axios.get(`/api/profile`);
+        if (data.ok) {
+          setOk(true);
+        } else {
+          router.push("/login");
+        }
+      } catch (err) {
+        console.error("Error fetching current user:", err);
+        router.push("/login");
+      }
+    };
 
-  const getCurrentUser = async () => {
-    try {
-      const { data } = await axios.get(`/profile`);
-      if (data.ok) setOk(true);
-    } catch (err) {
+    if (state && state.token) {
+      fetchCurrentUser();
+    } else {
+      // Redirect to login if no token is available
       router.push("/login");
     }
-  };
+  }, [state,router]);
 
-  process.browser &&
-    state === null &&
-    setTimeout(() => {
-      getCurrentUser();
+  useEffect(() => {
+    // Trigger the getCurrentUser function after 1 second if the state is still null
+    const timer = setTimeout(() => {
+      if (process.browser && state === null) {
+        fetchCurrentUser();
+      }
     }, 1000);
 
-  return !ok ? (
-    <p>Loading ....</p>
-  ) : (
-    <> {children}</>
-  );
+    return () => clearTimeout(timer); // Cleanup timer on component unmount
+  }, [state]);
+
+  return !ok ? <p>Loading ...</p> : <>{children}</>;
 };
 
 export default UserRoute;
