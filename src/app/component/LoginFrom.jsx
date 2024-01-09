@@ -27,9 +27,9 @@ const LoginForm = () => {
     try {
       e.preventDefault();
       setLoading(true);
-console.log(phone,password)
+// console.log(phone,password)
       // Perform login logic (e.g., send data to the server)
-      const { data } = await axios.post("http://45.77.247.238:5000/api/login", {
+      const { data } = await axios.post("/api/login", {
         password,
         phone
       })

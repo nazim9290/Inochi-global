@@ -20,7 +20,7 @@ const SideNavbar = () => {
 
     }
 }, [state]);
-console.log(image.public_id)
+console.log(image.url)
   const isActive = (path) => {
     return pathname === path;
   };
@@ -32,7 +32,7 @@ console.log(image.public_id)
 {Image ?
 (
   <>
-  <Image src={image.public_url} width={30} height={30} alt="admin avatar" />
+  <Image src={image.url} width={30} height={30} alt="admin avatar" />
 
   </>
 ):(
