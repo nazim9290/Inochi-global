@@ -20,7 +20,7 @@ const SideNavbar = () => {
 
     }
 }, [state]);
-console.log(image.url)
+// console.log(image.url)
   const isActive = (path) => {
     return pathname === path;
   };
