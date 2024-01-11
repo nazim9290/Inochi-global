@@ -2,6 +2,8 @@
 import './globals.css'
 import "bootstrap/dist/css/bootstrap.min.css"; // Import bootstrap CSS
 import { UserProvider } from '@/context';
+import "react-toastify/dist/ReactToastify.css";
+
 // const inter = Inter({ subsets: ['latin'] })
 import 'popper.js';
 import 'jquery';
