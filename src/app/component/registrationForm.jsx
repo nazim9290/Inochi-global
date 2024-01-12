@@ -2,7 +2,7 @@
 import axios from "axios";
 import { useContext, useState } from "react";
 import { UserContext } from "../../context/";
-
+import { toast, ToastContainer } from "react-toastify";
 
 const RegistrationForm = () => {
     const [phone, setPhone] = useState(0);
@@ -18,23 +18,29 @@ const RegistrationForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (password !== cpass) {
+            toast.error("your password not maching");
+
             // Handle password mismatch error
             return;
         }
+        // console.log(phone,password,name)
         try {
             setLoading(true);
 
-            const { data } = await axios.post(`api/register`, {
+            const { data } = await axios.post("api/register", {
                 phone,
                 password,
                 name,
 
             });
+            // console.log(data.error)
             if (data.error) {
-                // toast.error(data.error);
+                toast.error(data.error);
                 setLoading(false);
             } else {
-                console.log(data)
+                toast.success("User Create Successfull")
+                // console.log(data)
+
                 // update local storage, update user, keep token
 
                 // update context
@@ -52,6 +58,8 @@ const RegistrationForm = () => {
                 <h3 className="text-info text-center my-5" style={{ marginTop: '7%' }}><b className="my-5">Register</b></h3>
                 <div className="wrapper1 card border border-white">
                     <form  className="needs-validation" noValidate onSubmit={handleSubmit}>
+                    <ToastContainer/>
+                     
                         <div className="mb-3">
                             <label className="form-label">Name</label>
                             <input type="text"
