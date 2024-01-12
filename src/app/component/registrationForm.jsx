@@ -46,6 +46,10 @@ const RegistrationForm = () => {
                 // update context
                 setOk(true);
                 setLoading(false);
+                setName(" ");
+                setPhone(0);
+                setcPass(" ");
+                setPas(" ")
             }
         } catch (err) {
             setLoading(false);
