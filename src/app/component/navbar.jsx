@@ -42,14 +42,26 @@ const Navbar = () => {
           <div className="wrapper">
             <BootstrapNavbar bg="light" expand="lg" className="navbar navbar-expand-lg">
               <Container fluid>
-                
-                
+                {/* Your social media icons here */}
+                <a href=" https://www.facebook.com/inochi.education" >
+                <FacebookRoundedIcon sx={{ fontSize: 40 }}/>
+                </a>
+                <a href="#"  >
+                  <InstagramIcon sx={{ fontSize: 40 }}/>
+                </a>
+
+               <a href="https://www.youtube.com/@inochiGlobalEducation" >
+                  <YouTubeIcon sx={{ fontSize: 40 }}/>
+                </a>
+                <a href="https://www.linkedin.com/company/inochi-"  >
+                  <LinkedInIcon  sx={{ fontSize: 40 }}/>
+                </a>
+                {/* ... */}
                   <Nav className="navbar-nav mx-auto">
                     <Nav.Link href="#"><b>call</b></Nav.Link>
                     <Nav.Link href="#"><b>WhatsApp</b></Nav.Link>
-                    <Nav.Link href="#"><b>Fix Online Seminar</b></Nav.Link>
+                    <Nav.Link href="seminar.html"><b>Fix Online Seminar</b></Nav.Link>
                   </Nav>
-               
               </Container>
             </BootstrapNavbar>
           </div>
@@ -68,13 +80,11 @@ const Navbar = () => {
                 <Nav.Link href="/contact"><b>CONTACT US</b></Nav.Link>
                 <Nav.Link href="/dashbord"><b>DASHBOARD</b></Nav.Link>
                 <Nav.Link href="/register"><b>REGISTER</b></Nav.Link>
-                {/* <Nav.Link href="/guest-register"><b>GUEST REGISTER</b></Nav.Link> */}
                 <Nav.Link href="/login"><b>LOGIN</b></Nav.Link>
               </Nav>
               <form className="d-flex" role="search">
               <button type="button" className="btn btn-primary me-2" style={{ width: '100%', backgroundColor: '#4f46e5' }}>Join Free</button>
                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              
               </form>
             </BootstrapNavbar.Collapse>
           </Container>
