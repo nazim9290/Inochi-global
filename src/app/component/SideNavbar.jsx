@@ -20,7 +20,7 @@ const SideNavbar = () => {
 
     }
 }, [state]);
-// console.log(image.url)
+// console.log(image)
   const isActive = (path) => {
     return pathname === path;
   };
@@ -29,7 +29,7 @@ const SideNavbar = () => {
     <>
       <div className='sidebar'>
         <div className='img-container text-center'>
-{Image ?
+{image ?
 (
   <>
   <Image src={image.url} width={30} height={30} alt="admin avatar" />

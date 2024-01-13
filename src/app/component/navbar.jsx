@@ -60,7 +60,7 @@ const Navbar = () => {
                   <Nav className="navbar-nav mx-auto">
                     <Nav.Link href="#"><b>call</b></Nav.Link>
                     <Nav.Link href="#"><b>WhatsApp</b></Nav.Link>
-                    <Nav.Link href="seminar.html"><b>Fix Online Seminar</b></Nav.Link>
+                    <Nav.Link href="/seminar"><b>Fix Online Seminar</b></Nav.Link>
                   </Nav>
               </Container>
             </BootstrapNavbar>
