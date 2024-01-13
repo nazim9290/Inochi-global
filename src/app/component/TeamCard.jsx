@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const TeamCard = ({ data }) => {
   const [isHovered, setIsHovered] = useState(false);
-console.log(data.image.url)
+// console.log(data.image.url)
   return (
     <>
       {data.image ? (
