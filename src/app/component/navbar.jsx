@@ -76,6 +76,8 @@ const Navbar = () => {
               <Nav className="navbar-nav me-auto mb-2 mb-lg-0 navbar-center mx-auto">
               <Nav.Link href="/"><b>HOME</b></Nav.Link>
                 <Nav.Link href="/study"><b>STUDY-SETTLE-JAPAN</b></Nav.Link>
+                <Nav.Link href="/about"><b>ABOUT-US</b></Nav.Link>
+
                 <Nav.Link href="/blog"><b>BLOG</b></Nav.Link>
                 <Nav.Link href="/contact"><b>CONTACT US</b></Nav.Link>
                 <Nav.Link href="/dashbord"><b>DASHBOARD</b></Nav.Link>
