@@ -49,7 +49,7 @@ const [orderNum,setOrdernum]=useState(" ");
   const total = orders.reduce((acc, order) => acc + parseFloat(order.price), 0);
 
   return (
-    <div>
+    <div className='conatiner'>
      
 
       {/* Display the header only once */}
@@ -77,16 +77,16 @@ const [orderNum,setOrdernum]=useState(" ");
 
   {/*  */}
 
-     <div >
+     <div className='maincds'>
      <h2>Order Details</h2>
       <p>Order No: XXXXXXX of DD/MM/YYYY</p>
      <table>
         <thead>
           <tr>
-            <th>PRODUCT</th>
-            <th>EAN CODE</th>
-            <th>QUANTITY</th>
-            <th>PRICE</th>
+            <th className='tes'>PRODUCT</th>
+            <th className='tes'>EAN CODE</th>
+            <th className='tes'>QUANTITY</th>
+            <th className='teslast'>PRICE</th>
           </tr>
         </thead>
         <tbody>
@@ -101,6 +101,19 @@ const [orderNum,setOrdernum]=useState(" ");
         </tbody>
       </table>
       <p>TOTAL: {total.toFixed(2)}</p>
+      <br/>
+<br/><br/>
+<br/>
+<h2>Delivery Address:</h2>
+<h2>Name And Surname</h2>
+<h2>STREET</h2>
+<h2>Twon</h2>
+<h2>Country</h2> 
+<br/>
+<br/>
+
+<h2>Email</h2>
+<h2>Phone Number</h2>
 
      </div>
     </div>
