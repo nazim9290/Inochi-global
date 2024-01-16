@@ -19,11 +19,8 @@ const RegistrationForm = () => {
         e.preventDefault();
         if (password !== cpass) {
             toast.error("your password not maching");
-
-            // Handle password mismatch error
             return;
         }
-        // console.log(phone,password,name)
         try {
             setLoading(true);
 

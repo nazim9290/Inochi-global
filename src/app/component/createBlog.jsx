@@ -21,7 +21,7 @@ const CreateBlog = () => {
     // console.log([...formData]);
     setUploading(true);
     try {
-      const { data } = await axios.post("api/upload-image-file", formData);
+      const { data } = await axios.post("http://45.77.247.238:5000/api/upload-image-file", formData);
       // console.log("uploaded image => ", data);
       setImage({
         url: data.url,
@@ -42,14 +42,14 @@ const CreateBlog = () => {
 
   const handleSubmit = async () => {
     try {
-      const { data } = await axios.post("api/create-blog", {
+      const { data } = await axios.post("http://45.77.247.238:5000/api/create-blog", {
         image,
         title,
         content,
         category,
       });
       setSuccessMessage("Blog created successfully!");
-      setErrorMessage(''); // Clear any previous error message
+      setErrorMessage('');
     } catch (err) {
       console.error("Error:", err);
       setSuccessMessage('');
