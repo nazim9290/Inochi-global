@@ -6,7 +6,7 @@ const ChartTable = ({ jsonData }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleTdClick = (item) => {
-    console.log(item)
+    // console.log(item)
    
   };
  

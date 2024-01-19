@@ -14,13 +14,13 @@ const TeamCard = ({ data }) => {
               <div
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
-                className="card shadow rounded position-relative"
+                className="card  rounded position-relative"
                 style={{
-                  width: '100%', // Set width to 100% for full length
+                  width: 'auto', // Set width to 100% for full length
                   height: 'auto', // Set height to auto to maintain aspect ratio
                 }}
               >
-                <Image src={data.image.url} alt="Bootstrap" width={280} height={400} objectFit="cover" />
+                <Image src={data.image.url} alt="Bootstrap" width={250} height={250} objectFit="cover" />
                 {isHovered && (
                   <div
                     className="text-overlay position-absolute left-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white"

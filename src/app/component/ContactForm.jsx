@@ -1,7 +1,9 @@
 "use client"
 import axios from 'axios';
 import React, { useState } from 'react';
-
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 const ContactForm = () => {
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
@@ -134,14 +136,18 @@ const ContactForm = () => {
                             </div>
                             <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                                 <div className="my-4">
+                                <LocationOnIcon />
+                                
                                     <i className="fa fa-map-marker" style={{ fontSize: 24 }} /><b>Address</b>
                                     <p>Suite 11, 41 Rickard Road, Bankstown, NSW-1000</p>
                                 </div>
                                 <div className="my-4">
+                                <LocalPhoneIcon />
                                     <i className="fa fa-phone" style={{ fontSize: 24 }} /><b>Contact info</b>
                                     <p>01******** </p>
                                 </div>
                                 <div className="my-4">
+                                <AccessTimeIcon/>
                                     <i className="fa fa-clock-o" style={{ fontSize: 24 }} /><b>Hour of operation</b>
                                     <p>Monday-Friday 10:00AM-6:00PM </p>
                                 </div>
