@@ -41,8 +41,9 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  const phoneNumber= 8801985080372
+  const phoneNumber= +8801784889646
   const formattedPhoneNumber = phoneNumber
+  const telLink = `tel:${formattedPhoneNumber}`;
 
   // Create the WhatsApp link
   const whatsappLink = `https://wa.me/${formattedPhoneNumber}`;
@@ -71,7 +72,7 @@ const Navbar = () => {
                 <a style={{color:"white"}} href="https://www.linkedin.com/company/inochi-"  >
                   <LinkedInIcon sx={{ fontSize: 30 }} />
                 </a>
-                <Link href="#"  style={{ color: 'white', marginLeft: '5px' ,marginRight:"5px" }}>
+                <Link href={telLink} style={{ color: 'white', marginLeft: '5px' ,marginRight:"5px" }}>
                 <b style={{ color: "white"  ,textDecoretion:"none"}} >call</b>
 
                 </Link>
