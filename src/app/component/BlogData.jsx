@@ -19,7 +19,7 @@ const BlogData = () => {
       console.log(err);
     }
   };
-
+// single blog select by onclick
   return (
     <div className="container">
             <div className="row">

@@ -23,7 +23,7 @@ const HOME = () => {
         const response = await axios.get('/published-carusels');
         setCaruselData(response.data.publishedCarusels);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        // console.error('Error fetching data:', error);
       }
     };
 

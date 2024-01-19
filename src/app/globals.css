@@ -1,3 +1,10 @@
+body {
+  overflow-x: hidden !important; /* This will hide the scrollbar */
+}
+a{
+  text-decoration: none !important;
+   
+}
 .navbar2 {
   background-color: #cbd5e1;
 }

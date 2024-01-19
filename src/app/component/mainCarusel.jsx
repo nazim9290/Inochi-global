@@ -12,7 +12,7 @@ const MainCarusel = () => {
       try {
         const response = await axios.get("/api//published-carusels");
         const fetchedImages = response.data.publishedCarusels; // Adjust based on your actual data structure
-       console.log(fetchedImages)
+      //  console.log(fetchedImages)
         setImages(fetchedImages);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -21,7 +21,6 @@ const MainCarusel = () => {
 
     fetchData();
   }, []); // Empty dependency array ensures the effect runs only once, similar to componentDidMount
-
   const renderCarousel = () => {
     return images.map(item => (
       <Carousel.Item key={item.id}>
@@ -29,7 +28,7 @@ const MainCarusel = () => {
           className="d-block w-100"
           src={item.image.url}
           height={1000}
-          width={1000}
+          width={800}
           alt={item}
         />
       </Carousel.Item>

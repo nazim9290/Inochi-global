@@ -10,14 +10,11 @@ import MainBanner from '../component/MainBanner';
 
 const Contact = () => {
  
-
   return (
     <div>
       <NavBar />
       <MainBanner title="Contact Page" />
-
       <ContactForm />
-
       <Subsscribe />
       <Fotter />
     </div>

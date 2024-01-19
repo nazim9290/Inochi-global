@@ -1,9 +1,9 @@
 import Image from "next/image"
 import logo from "../../../public/imgages/LOGO.png"
+// /seminar
 const WellStarter=()=>{
     return(
         <>
-            {/* Welcome starts */}
 <div className="my-5">
   <div className="card shadow rounded my-5">
     <div className="card-body ">
@@ -19,7 +19,9 @@ const WellStarter=()=>{
             Lorem Ipsum has been the industrys standard dummy text ever since the 1500s
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industrys standard dummy text ever since the 1500s</p>
-          <button type="button" className="btn btn-warning">GET START NOW</button>
+            <a href="/seminar"  >
+            <button type="button" className="btn btn-warning">GET START NOW</button>
+                </a>
         </div>
       </div>
     </div>

@@ -1,10 +1,11 @@
 "use client"
 import React, { useEffect ,useContext, useState} from 'react'
 import Link from 'next/link';
+import { usePathname } from 'next/navigation'
+
 import "./Sidebar.css";
 import logo from "../../../public/imgages/LOGO.png"
 import Image from 'next/image';
-import { usePathname } from 'next/navigation'
 import { UserContext } from "../../context";
 
 const SideNavbar = () => {
