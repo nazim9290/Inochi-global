@@ -7,7 +7,7 @@ const About = () => {
     return (
         <div>
             <NavBar />
-            <BlogData />
+            <BlogData page="final"/>
             <Fotter/>
         </div>
     );

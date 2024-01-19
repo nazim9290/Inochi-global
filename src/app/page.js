@@ -13,6 +13,8 @@ import Fotter from './component/Foter';
 import './globals.css'
 import axios from "axios"
 import React, { useState, useEffect } from 'react';
+import BlogData from './component/BlogData';
+import Programs from './component/Programs';
 
 const HOME = () => {
   const [caruselData, setCaruselData] = useState([]);
@@ -36,12 +38,14 @@ const HOME = () => {
         <NavBar />
         <MainCarusel  caruselData={caruselData}/>
         <Rapper />
+        <Programs />
         <Service />
         <WellStarter/>
         <Subsscribe />
         <Tutorila />
         <Team />
         <Testmonial/>
+        <BlogData page="main"/>
         <Fotter />
       </div>
     </div>

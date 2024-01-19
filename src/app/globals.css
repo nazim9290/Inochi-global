@@ -445,3 +445,14 @@ td {
   width: 31% !important;
 
 }
+.programs{
+  background-color: transparent !important;
+}
+.progmain{
+  background-image: url("../../public/imgages/se.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;  
+  background-position: center center;
+  position: relative;
+  padding-bottom: 2px;
+}

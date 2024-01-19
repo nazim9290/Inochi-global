@@ -22,7 +22,7 @@ const BlogCard = ({ data }) => {
                 <div className="card-body text-center">
                   <Image src={data.image.url} alt="Bootstrap" width={150} height={150} /><br />
                   <p className="text-center mb-5"><b>{data.title}</b></p>
-                  <p className="text-center mb-5"><b>{data.content}</b></p>
+                  {/* <p className="text-center mb-5"><b>{data.content}</b></p> */}
                 </div>
               </div>
             </div>
