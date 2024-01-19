@@ -41,7 +41,11 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  const phoneNumber= 8801985080372
+  const formattedPhoneNumber = phoneNumber
 
+  // Create the WhatsApp link
+  const whatsappLink = `https://wa.me/${formattedPhoneNumber}`;
   return (
     <div className="w-full bg-base-100 shadow">
       <div>
@@ -71,7 +75,7 @@ const Navbar = () => {
                 <b style={{ color: "white"  ,textDecoretion:"none"}} >call</b>
 
                 </Link>
-                <Link  style={{ color: 'white', marginLeft: '5px' ,marginRight:"5px" }} href="#"><b style={{ color: "white" }}>WhatsApp</b></Link>
+                <Link  style={{ color: 'white', marginLeft: '5px' ,marginRight:"5px" }} href={whatsappLink}><b style={{ color: "white" }}>WhatsApp</b></Link>
                 <Link href="/seminar" style={{ color: 'white', marginLeft: '5px' ,marginRight:"5px" }}><b style={{ color: "white" }}>Fix Online Seminar</b></Link>               
                 <Nav className="navbar-nav mx-auto">
                  
