@@ -460,3 +460,54 @@ td {
   position: relative;
   padding-bottom: 2px;
 }
+.leson{
+  background: #E5E6E6;
+
+}
+
+
+/* Rectangle 96 */
+
+
+/* Frame 218 */
+
+.leason-box{
+  box-sizing: border-box;
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 21.8309px 109.155px;
+gap: 15.59px;
+
+position: absolute;
+width: 425px;
+height: 325px;
+
+background: #E5E6E6;
+border: 2px solid #1F2937;
+border-radius: 8px;
+}
+
+
+/* data */
+
+/* width: 283.2px;
+height: 236px;
+
+
+/* Inside auto layout */
+/* flex: none;
+order: 0;
+flex-grow: 0; */
+
+
+/* Resources Exam Video PDF About japan */
+
+/* position: absolute;
+width: 283.2px;
+height: 236px;
+left: 19.6px;
+top: 44.5px; */
+

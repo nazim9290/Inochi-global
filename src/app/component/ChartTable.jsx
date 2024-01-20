@@ -18,8 +18,8 @@ const ChartTable = ({ jsonData }) => {
   return (
     <div>
       <h2 className="text-center">alphabet chart</h2>
-      <table className="table text-center" style={{ width: '60%' }}>
-        <thead>
+      <table className="table text-center" style={{ width: '60%' ,margin: "auto"}}>
+        {/* <thead>
           <tr>
             <th scope="col">Column 1</th>
             <th scope="col">Column 2</th>
@@ -28,7 +28,7 @@ const ChartTable = ({ jsonData }) => {
             <th scope="col">Column 5</th>
             <th scope="col">Play all</th>
           </tr>
-        </thead>
+        </thead> */}
         <tbody>
           {jsonData.map((item, index) => (
             <React.Fragment key={index}>
@@ -38,9 +38,9 @@ const ChartTable = ({ jsonData }) => {
               </td>
               {(index + 1) % itemsPerLine === 0 && (
                 <>
-                  <td>
+                  {/* <td>
                     <PlayArrowIcon sx={{ fontSize: 40 }} />
-                  </td>
+                  </td> */}
                   <tr />
                 </>
               )}

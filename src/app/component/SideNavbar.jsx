@@ -71,6 +71,13 @@ const SideNavbar = () => {
           <div className={`sidebar-item ${isActive('/dashbord/blog') ? 'active' : ''}`}>
             <Link href="/dashbord/blog">Create Blog</Link>
           </div>
+          <div className={`sidebar-item ${isActive('/dashbord/exam') ? 'active' : ''}`}>
+            <Link href="/dashbord/exam">Exam</Link>
+          </div>
+          <div className={`sidebar-item ${isActive('/dashbord/audioleson') ? 'active' : ''}`}>
+            <Link href="/dashbord/audioleson">Audio Leson</Link>
+          </div>
+
           {/* <div className={`sidebar-item ${isActive('/dashbord/audio') ? 'active' : ''}`}>
             <Link href="/dashbord/audio"></Link>
           </div>
