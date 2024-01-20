@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect ,useContext, useState} from 'react'
 import Link from 'next/link';
-import { usePathname } from 'next/navigation'
+import { useRouter,usePathname } from "next/navigation";
 
 import "./Sidebar.css";
 import logo from "../../../public/imgages/LOGO.png"
@@ -9,19 +9,30 @@ import Image from 'next/image';
 import { UserContext } from "../../context";
 
 const SideNavbar = () => {
+  const router = useRouter();
+
+
   const pathname = usePathname();
   const [state, setState] = useContext(UserContext);
   const [name, setName] = useState("");
   const [image, setImage] = useState({});
 
+  const logout = () => {
+    router.push("/login");
+
+    window.localStorage.removeItem("auth");
+    
+    setState({user:{},token:""});
+  };
   useEffect(() => {
     if (state && state.user) {
         setName(state.user.name)
         setImage(state.user.image)
 
+    }else{
+      router.push("/login")
     }
-}, [state]);
-// console.log(image)
+}, [state,router]);
   const isActive = (path) => {
     return pathname === path;
   };
@@ -44,7 +55,7 @@ const SideNavbar = () => {
 )
 }
         </div>
-        <h6 className=' text-center'>Rafiq Islam</h6>
+        <h6 className=' text-center'>{name}</h6>
 
         <p className="text-center">Dhaka, Banglaseh</p>
         <div className='sidebar-container'>
@@ -60,18 +71,24 @@ const SideNavbar = () => {
           <div className={`sidebar-item ${isActive('/dashbord/blog') ? 'active' : ''}`}>
             <Link href="/dashbord/blog">Create Blog</Link>
           </div>
-          <div className={`sidebar-item ${isActive('/dashbord/audio') ? 'active' : ''}`}>
-            <Link href="/dashbord/audio">Audio</Link>
+          {/* <div className={`sidebar-item ${isActive('/dashbord/audio') ? 'active' : ''}`}>
+            <Link href="/dashbord/audio"></Link>
+          </div>
+          <div className={`sidebar-item ${isActive('/dashbord/address') ? 'active' : ''}`}>
+            <Link href="/dashbord/address"></Link>
+          </div> */}
+          <div className={`sidebar-item ${isActive('/dashbord/account') ? 'active' : ''}`}>
+            <Link href="/dashbord/account">Lesson</Link>
           </div>
            <div className={`sidebar-item ${isActive('/dashbord/reviewcreate') ? 'active' : ''}`}>
             <Link href="/dashbord/reviewcreate">Give Us Your FeedBack</Link>
           </div>
-          <div className={`sidebar-item ${isActive('/dashbord/address') ? 'active' : ''}`}>
-            <Link href="/dashbord/address">Address</Link>
-          </div>
-          <div className={`sidebar-item ${isActive('/dashbord/account') ? 'active' : ''}`}>
-            <Link href="/dashbord/account">Accounts</Link>
-          </div>
+          
+          <div className="sidebar-item ">
+          <a onClick={logout}>
+        Logout
+      </a>
+          </div> 
         </div>
       </div>
     </>

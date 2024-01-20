@@ -8,7 +8,7 @@ const Address = () => {
       <div className="d-flex">
       <SideNavbar />
       <div className="w-75" style={{ marginLeft: 'auto' }}>
-<EditProfile/>
+       <EditProfile/>
       </div>
     </div>
     <Foter/>
