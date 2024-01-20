@@ -1,8 +1,9 @@
 // import { Inter } from 'next/font/google'
 import './globals.css'
 import "bootstrap/dist/css/bootstrap.min.css"; // Import bootstrap CSS
-import { UserProvider } from '@/context';
+import { UserProvider } from '../context/index';
 import "react-toastify/dist/ReactToastify.css";
+import { VideoProvider } from '../context/VideoContext';
 
 // const inter = Inter({ subsets: ['latin'] })
 import 'popper.js';
@@ -20,9 +21,11 @@ export default function RootLayout({ children }) {
       <body>
       <div>
       <UserProvider>
+<VideoProvider>
       {children}
-
+</VideoProvider>
       </UserProvider>
+
       </div>
       </body>
     </html>

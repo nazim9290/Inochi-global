@@ -1,7 +1,7 @@
 import React from 'react';
 import YouTube from 'react-youtube';
 
-const YouTubeSingleVideo = () => {
+const YouTubeSingleVideo = ({videoId}) => {
   const opts = {
     height: '360',
     width: '640',
@@ -13,8 +13,6 @@ const YouTubeSingleVideo = () => {
       rel: 0,
     },
   };
-
-  const videoId = 'OaCcV0nsEO0';
 
   const onReady = (event) => {
   };

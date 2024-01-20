@@ -5,6 +5,10 @@ a{
   text-decoration: none !important;
    
 }
+.playerlist {
+  margin: auto;
+  text-align-last: end;
+}
 .navbar2 {
   background-color: #cbd5e1;
 }

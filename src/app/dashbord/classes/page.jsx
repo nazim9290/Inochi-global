@@ -1,14 +1,15 @@
 "use client"
 import SideNavbar from "@/app/component/SideNavbar";
 import Foter from "@/app/component/Foter";
-import YouTubePlaylist from "@/app/component/YouTubePlaylist";
+import PlayListAdd from "../../component/PlayListAdd";
+
 const Classes = () => {
     return (
         <>
       <div className="d-flex">
       <SideNavbar />
       <div className="w-75" style={{ marginLeft: 'auto' }}>
-      <YouTubePlaylist />
+      <PlayListAdd />
       </div>
     </div>
     <Foter/>

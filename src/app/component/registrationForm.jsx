@@ -7,6 +7,7 @@ import { toast, ToastContainer } from "react-toastify";
 const RegistrationForm = () => {
     const [phone, setPhone] = useState(0);
     const [name, setName] = useState("");
+    const [email,setEmail]=useState(" ")
     const [password, setPas] = useState("");
     const [cpass, setcPass] = useState("")
     const [state, setState] = useContext(UserContext);
@@ -28,7 +29,7 @@ const RegistrationForm = () => {
                 phone,
                 password,
                 name,
-
+                email
             });
             // console.log(data.error)
             if (data.error) {
@@ -68,6 +69,18 @@ const RegistrationForm = () => {
                                 placeholder="Enter your Full Name"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
+                                required />
+                            <div className="invalid-feedback">
+                                Please enter a name.
+                            </div>
+                        </div>
+                        <div className="mb-3">
+                            <label className="form-label">Email</label>
+                            <input type="text"
+                                className="form-control"
+                                placeholder="Enter your Full Name"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                                 required />
                             <div className="invalid-feedback">
                                 Please enter a name.
