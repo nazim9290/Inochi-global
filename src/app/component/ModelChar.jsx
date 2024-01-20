@@ -1,32 +1,42 @@
 "use client "
 import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Button, Modal, ModalBody, ModalFooter } from 'reactstrap';
 
-const ModelChar = ({ isOpen, toggle, selectedItem }) => {
+
+const ModelChar = ({ isOpen, toggle, selectedItem, page, onNext, onPrevious }) => {
   return (
     <Modal isOpen={isOpen} toggle={toggle}>
       <ModalBody>
-        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-        <p style={{ marginLeft: '10px' }}>
-            {selectedItem.ROMAJI} 
-          </p>        
-          <p style={{ marginLeft: '10px' }}>
-            {selectedItem.HIRAGANA}
-          </p>
-          <p style={{ marginLeft: '10px' }}>
-            {selectedItem.Katakana}
-          </p>
-        </div>
+        {selectedItem && (
+          <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+            <p style={{ marginLeft: '10px' }}>{selectedItem.ROMAJI}</p>
+            {page === "Hiragana" ? (
+             <>
+             <p style={{ marginLeft: '10px' ,fontsize:"25px" }}>{selectedItem.HIRAGANA}</p>
+              <p style={{ marginLeft: '10px' }}>{selectedItem.Bangla}</p>
+             </>
+            ) : (
+             <>
+             <p style={{ marginLeft: '10px' ,fontsize:"25px"}}>{selectedItem.Katakana}</p>
+              <p style={{ marginLeft: '10px' }}>{selectedItem.Bangla}</p>
+             </>
+
+            )}
+
+          </div>
+        )}
         {/* Add more information as needed */}
-      </ModalBody>
-      <ModalFooter>
-        <Button color="primary" onClick={toggle}>
-          Do Something
+        <Button color="primary" onClick={onNext}>
+          Next
         </Button>{' '}
-        <Button color="secondary" onClick={toggle}>
+        <Button color="primary" onClick={onPrevious}>
+        previousItem
+        </Button>{' '}
+        <Button color="secondary" onClick={() => toggle(false)}>
           Cancel
         </Button>
-      </ModalFooter>
+      </ModalBody>
+      
     </Modal>
   );
 };

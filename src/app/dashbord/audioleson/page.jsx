@@ -1,7 +1,6 @@
 "use client"
 import SideNavbar from "@/app/component/SideNavbar";
 import Foter from "@/app/component/Foter";
-import Totalsection from "@/app/component/Totalsection";
 import FullLeasonDesh from "@/app/component/FullLeasonDesh";
 const Page = () => {
     return (
