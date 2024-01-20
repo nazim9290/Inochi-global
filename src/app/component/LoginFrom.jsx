@@ -52,37 +52,37 @@ const LoginForm = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-3">
-          <label htmlFor="exampleFormControlInput1" className="form-label">Name</label>
-          <input
-                                    type="number"
-                                    className="form-control"
-                                    placeholder="Enter your Mobile number"
-                                    value={phone}
-                                    onChange={(e) => setPhone(e.target.value)}
-                                    required
-                                /> 
-          <div className="invalid-feedback">
-            Please enter a name.
-          </div>
-        </div>
-        {/*  */}
-        <div className="mb-3">
-          <label htmlFor="exampleFormControlInput1" className="form-label">Password:</label>
-          <input type="text"
-            className="form-control"
-            placeholder="Enter your email"
-            value={password}
-            onChange={handlePasswordChange}
-            required />
-          <div className="invalid-feedback">
-            Please enter Your Password.
-          </div>
-        </div>
-        <button type="submit">Login</button>
-      </form>
+    <h3 className="text-info text-center my-5" style={{ marginTop: '7%' }}><b className="my-5">Log in</b></h3>
+    <div className="wrapper1 card border border-white">
+        <form  className="needs-validation" noValidate onSubmit={handleSubmit}>
+            <div className="mb-3">
+                <label className="form-label">Phone</label>
+               <input
+                        type="number"
+                        className="form-control"
+                        placeholder="Enter your Mobile number"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
+                        required
+                    />
+                <div className="invalid-feedback">
+                    Please enter a phone.
+                </div>
+            </div>
+            <div className="mb-3">
+                <label className="form-label">Password</label>
+                <input type="password" className="form-control"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required />
+                <div className="invalid-feedback">
+                    Please enter a password.
+                </div>
+            </div>
+            <button type="submit" className="btn btn-outline-info w-100">Log in</button>
+        </form>
     </div>
+</div>
   );
 };
 

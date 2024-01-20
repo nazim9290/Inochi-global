@@ -78,7 +78,7 @@ const RegistrationForm = () => {
                             <label className="form-label">Email</label>
                             <input type="text"
                                 className="form-control"
-                                placeholder="Enter your Full Name"
+                                placeholder="Enter your  Email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 required />
