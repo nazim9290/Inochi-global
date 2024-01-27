@@ -3,7 +3,14 @@ import SideNavbar from "@/app/component/SideNavbar";
 import Foter from "@/app/component/Foter";
 import ChartComponent from "@/app/component/ChartComponent";
 import Link from "next/link";
+import { useRouter } from 'next/navigation'
 const Hirangana = () => {
+  const router=useRouter();
+  let _id=2
+  const handleCardClick = () => {
+    router.push("/dashbord/kanjidata");
+    // console.log(data._id)
+  };
   return (
     <>
       <div className="d-flex">
@@ -11,7 +18,7 @@ const Hirangana = () => {
         <div className="w-75" style={{ marginLeft: 'auto' }}>
           <h1 className="text-center" style={{ color: "black" }}>Kanji </h1>
           <div className="leson container">
-            <h1>Let's Learn Kanji</h1>
+            <h1>Lets Learn Kanji</h1>
             <p>Master Japan With the Basic</p>
 
           </div>
@@ -22,7 +29,8 @@ const Hirangana = () => {
               <div>
                 <butun type="button" className="btn btn-sm"
                   style={{ fontSize: 'small', color: "blue", marginRight: "10px", backgroundColor: "#c7d2fe" }}>{`Start Quiz`}</butun>
-                <butun type="button" className="btn btn-primary btn-sm" style={{ fontSize: 'small' }}>{`Show Lesson`}</butun>
+                <butun onClick={handleCardClick} style={{ cursor: 'pointer' }}
+                 type="button" className="btn btn-primary btn-sm">{`Show Lesson`}</butun>
               </div>
 
             </div>

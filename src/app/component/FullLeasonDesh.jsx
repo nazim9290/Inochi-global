@@ -32,7 +32,7 @@ const FullLeasonDesh = () => {
                     <butun type="button" className="btn btn-primary btn-sm" style={{ fontSize: 'small' }}>{`More >>`}</butun>
                   </div>
                   <li>
-                    <div className="d-flex justify-content-between align-items-center">
+                    <div>
                       <Link href="/dashbord/katakanta">
                       <span><b>Katakana</b></span>
                       </Link>
@@ -76,8 +76,12 @@ const FullLeasonDesh = () => {
                   <li className=""><b>Hiragana Course</b></li>
                   <li className=""><b>Katakana Course</b></li>
                   <li className="">
-                    <div className="d-flex justify-content-between align-items-center">
-                      <span><b>N5 Course</b></span>
+                  
+                    <div className="d-flex justify-content-between">
+                    <Link href="/dashbord/leson">
+                    <span><b>N5 Course</b></span>
+                    </Link>
+                      <span><b></b></span>
                       <butun type="button" className="btn btn-primary btn-sm" style={{ fontSize: 'small' }}>{`More >>`}</butun>
                     </div>
                   </li>

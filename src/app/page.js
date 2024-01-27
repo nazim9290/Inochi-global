@@ -42,7 +42,7 @@ const HOME = () => {
         <Service />
         <WellStarter/>
         <Subsscribe />
-        <Tutorila />
+        {/* <Tutorila /> */}
         <Team />
         <Testmonial/>
         <BlogData page="main"/>
