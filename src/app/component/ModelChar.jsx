@@ -9,16 +9,16 @@ const ModelChar = ({ isOpen, toggle, selectedItem, page, onNext, onPrevious }) =
       <ModalBody>
         {selectedItem && (
           <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-            <p style={{ marginLeft: '10px' }}>{selectedItem.ROMAJI}</p>
+            <p style={{ marginLeft: '10px' ,fontSize:"40px"}}>{selectedItem.ROMAJI}</p>
             {page === "Hiragana" ? (
              <>
-             <p style={{ marginLeft: '10px' ,fontsize:"25px" }}>{selectedItem.HIRAGANA}</p>
-              <p style={{ marginLeft: '10px' }}>{selectedItem.Bangla}</p>
+             <p style={{ marginLeft: '10px' ,fontSize:"100px" }}>{selectedItem.HIRAGANA}</p>
+              <p style={{ marginLeft: '10px',fontSize:"40px" }}>{selectedItem.Bangla}</p>
              </>
             ) : (
              <>
-             <p style={{ marginLeft: '10px' ,fontsize:"25px"}}>{selectedItem.Katakana}</p>
-              <p style={{ marginLeft: '10px' }}>{selectedItem.Bangla}</p>
+             <p style={{ marginLeft: '10px' ,fontSize:"100px"}}>{selectedItem.Katakana}</p>
+              <p style={{ marginLeft: '10px' ,fontSize:"40px"}}>{selectedItem.Bangla}</p>
              </>
 
             )}
