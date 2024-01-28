@@ -93,8 +93,28 @@ const KanjiModel = ({ selectedItem }) => {
           <p style={{color:"#9cae83"}}>Radical</p>
         </div>
         <div className='col-3'>
-         <Image width={400} height={300} src={kanji} alt='14'/>
+          <p style={{color:"#9cae83"}}>Meaning</p>
+          <p>{selectedItem.meaning}</p>
+          <p style={{color:"#9cae83"}}>Onyomi</p>
+          <p>{selectedItem.onyomi}</p>
+          <p style={{color:"#9cae83"}}>kunyomi</p>
+          <p>{selectedItem.kunyomi}</p>
+          <hr />
+          <p style={{color:"#9cae83"}}>Radical</p>
         </div>
+        <div className='col-3'>
+          <p style={{color:"#9cae83"}}>Meaning</p>
+          <p>{selectedItem.meaning}</p>
+          <p style={{color:"#9cae83"}}>Onyomi</p>
+          <p>{selectedItem.onyomi}</p>
+          <p style={{color:"#9cae83"}}>kunyomi</p>
+          <p>{selectedItem.kunyomi}</p>
+          <hr />
+          <p style={{color:"#9cae83"}}>Radical</p>
+        </div>
+        {/* <div className='col-3'>
+         <Image width={400} height={300} src={kanji} alt='14'/>
+        </div> */}
       </div>
     </>
   );

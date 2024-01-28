@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Link from "next/link";
 
 const Examlist = () => {
     const [categorys, setCategory] = useState([]);
@@ -10,7 +11,7 @@ const Examlist = () => {
     const fetchExamCategory = async () => {
         try {
           const { data } = await axios.get("http://45.77.247.238:5000/api/get-all-posts");
-          console.log("user posts => ", data);
+          // console.log("user posts => ", data);
           setCategory(data);
         } catch (err) {
           console.log(err);
@@ -27,8 +28,12 @@ const Examlist = () => {
               ))
             } */}
      <div className="card" style={{width: '18rem'}}>
+    
   <ul className="list-group list-group-flush">
-    <li className="list-group-item">Cras justo odio</li>
+  <Link href="/dashbord/quiz">
+  <li className="list-group-item">Cras justo odio</li>
+
+  </Link>
     <li className="list-group-item">Dapibus ac facilisis in</li>
     <li className="list-group-item">Vestibulum at eros</li>
   </ul>
