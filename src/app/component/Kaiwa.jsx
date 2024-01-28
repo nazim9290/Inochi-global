@@ -2,13 +2,13 @@
 "use client"
 import React, { useCallback, useEffect, useState } from "react";
 import axios from "axios";
-import NCard from "./NCard"; // Assuming NCard is the component you want to render for each item
+import NCard from "./NCard";
 
 const Kaiwa = () => {
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [currentPage, setCurrentPage] = useState(1);
-    const postsPerPage = 10; // Number of items per page
+    const postsPerPage = 10; 
 
     const fetchPosts = useCallback(async () => {
         try {
@@ -23,7 +23,7 @@ const Kaiwa = () => {
 
     useEffect(() => {
         fetchPosts();
-    }, [fetchPosts, currentPage, postsPerPage]); // Include currentPage and postsPerPage in the dependency array
+    }, [fetchPosts, currentPage, postsPerPage]);
 
     const nextPage = () => {
         setCurrentPage(prevPage => prevPage + 1);
