@@ -10,7 +10,6 @@ const SeminarSection = () => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     fetchUserPosts();
-
   }, []);
 
   const fetchUserPosts = async () => {

@@ -1,10 +1,16 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import { useRouter } from 'next/navigation'
+
 const SeminerCard = ({ data }) => {
 // 
-
+const router=useRouter();
+const handlejoin=()=>{
+    router.push("/bookseminer")
+   }
     return (
         <>
             <div className="card  shadow rounded">
@@ -27,7 +33,7 @@ const SeminerCard = ({ data }) => {
                             <CalendarMonthIcon /> <span>{data.date} </span>
                             </div>
                         </div>
-                        <button type="button" className="btn btn-primary me-2">Book now</button>
+                        <button type="button" className="btn btn-primary me-2" onClick={handlejoin}>Book now</button>
                 </div>
             </div>
         </>

@@ -9,13 +9,19 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 // 
+import { useRouter } from 'next/navigation'
+
 import { UserContext } from "../../context";
 
 const Navbar = () => {
+  const router=useRouter();
   const [isNavbarExpanded, setIsNavbarExpanded] = useState(false);
   const handleNavbarToggle = () => {
     setIsNavbarExpanded(!isNavbarExpanded);
   };
+  const handlejoin=()=>{
+   router.push("/register")
+  }
   const [state, setState] = useContext(UserContext);
   const [image, setImage] = useState({});
   const [name,setName]=useState("")
@@ -119,7 +125,11 @@ const Navbar = () => {
                 
               </Nav>
               <form className="d-flex" role="search">
-                <button type="button" className="btn btn-primary me-2" style={{ width: '100%', backgroundColor: '#4f46e5' }}>Join Free</button>
+           
+                <button type="button"
+                 className="btn btn-primary me-2"
+                 onClick={handlejoin}
+                  style={{ width: '100%', backgroundColor: '#4f46e5' }}>Join Free</button>
                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
               </form>
             </BootstrapNavbar.Collapse>
