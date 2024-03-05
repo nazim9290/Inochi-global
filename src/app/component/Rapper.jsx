@@ -8,7 +8,7 @@ const Rapper = () => {
           <div className="card">
             <div className="card-body">
               <div className="row">
-                <div className="col-12 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                <div  className="text-center">
                   <Image src={logo} alt="Bootstrap" width={30} height={30} /><br />
                 </div>
                 <div className="col-12 col-sm-6 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
@@ -23,7 +23,7 @@ const Rapper = () => {
           <div className="card">
             <div className="card-body">
               <div className="row">
-                <div className="col-12 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                <div className="text-center">
                   <Image src={logo} alt="Bootstrap" width={30} height={30} /><br />
 
                 </div>
@@ -39,7 +39,7 @@ const Rapper = () => {
           <div className="card">
             <div className="card-body">
               <div className="row">
-                <div className="col-12 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                <div className="text-center">
                   <Image src={logo} alt="Bootstrap" width={30} height={30} /><br />
 
                 </div>

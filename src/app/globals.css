@@ -12,7 +12,13 @@ a{
 .navbar2 {
   background-color: #cbd5e1;
 }
-
+.main-prestener{
+  width: 95%  !important;
+  height: 89% !important;
+  margin: 0px;
+  margin-left: 35px !important;
+ text-align: center !important;
+}
 #navbar2.sticky {
   position: fixed;
   top: 0;
@@ -109,7 +115,10 @@ a{
 .footer {
   background-color: #e5e6e6;
 }
+.ft-l{
+  margin-left: 2rem !important;
 
+}
 .banner_height {
   height: 50vh;
 }

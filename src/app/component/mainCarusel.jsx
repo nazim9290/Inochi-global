@@ -10,9 +10,8 @@ const MainCarusel = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("/api//published-carusels");
+        const response = await axios.get("/api/published-carusels");
         const fetchedImages = response.data.publishedCarusels; // Adjust based on your actual data structure
-      //  console.log(fetchedImages)
         setImages(fetchedImages);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -27,8 +26,8 @@ const MainCarusel = () => {
         <Image
           className="d-block w-100"
           src={item.image.url}
-          height={1000}
-          width={800}
+          height={900}
+          width={600}
           alt={item}
         />
       </Carousel.Item>
@@ -36,7 +35,7 @@ const MainCarusel = () => {
   };
 
   return (
-    <div>
+    <div className='main-prestener'>
       <Carousel>
         {renderCarousel()}
       </Carousel>

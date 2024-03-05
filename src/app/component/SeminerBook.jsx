@@ -96,3 +96,6 @@ const SeminerBook = () => {
     )
 }
 export default SeminerBook;
+
+
+

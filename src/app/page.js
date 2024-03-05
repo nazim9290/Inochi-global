@@ -30,8 +30,7 @@ const HOME = () => {
     };
 
     fetchData();
-  }, []); // Empty dependency array ensures this effect runs once on mount
-
+  }, []);
   return (
     <div>
       <div >

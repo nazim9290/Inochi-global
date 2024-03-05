@@ -4,6 +4,7 @@ const Fotter=()=>{
     return(
 <footer>
   <div className="footer">
+     <div className="ft-l container">
     <div className="row mb-4">
       <div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
         <Image src={logo} alt="Bootstrap" style={{marginLeft: '2vw'}} width={60} height={60} className="mt-3 mb-3" /><br />
@@ -32,6 +33,7 @@ const Fotter=()=>{
       </div>
     </div>
     <p className="text-center">Copyright © 2023-All right reserved by  Inochi Global Education</p>
+    </div>
   </div>
 </footer>
 

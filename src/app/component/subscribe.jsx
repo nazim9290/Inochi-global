@@ -13,7 +13,6 @@ const Subsscribe = () => {
       e.preventDefault();
       setLoading(true);
 
-      // Perform login logic (e.g., send data to the server)
       const { data } = await axios.post("api/subscriber", {
         email,
       });
@@ -60,7 +59,7 @@ const Subsscribe = () => {
                 <div className="input-group-append">
                   <button
                     type="submit"
-                    className="btn btn-outline-secondary"
+                    className="btn btn-btn-secondary"
                     style={{ backgroundColor: "#ef4444" }}
                     disabled={loading}
                   >

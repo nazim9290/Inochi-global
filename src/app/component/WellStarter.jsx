@@ -8,9 +8,9 @@ const WellStarter=()=>{
   <div className="card shadow rounded my-5">
     <div className="card-body ">
       <div className="row">
-        <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <div className=" text-center col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
-          <Image src={logo} className="d-block w-100 " alt="..." style={{height: '66vh'}} />
+          <Image src={logo} alt="...." width={200} heigh={200} />
         </div>
         <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
           <h3><b>WELCOME TO OASIS EDUCATION</b></h3>
