@@ -113,7 +113,7 @@ const Navbar = () => {
                 {
                    name  ?(
                     <>
-                    <Nav.Link href="/dashbord"><b>DASHBOARD</b></Nav.Link>
+                    <Nav.Link href="/dashbord/profile"><b>DASHBOARD</b></Nav.Link>
                     </>
                   ):(
                     <>

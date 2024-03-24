@@ -27,7 +27,9 @@ const Dashbord = () => {
         <div className="">
           <SideNavbar />
           <div className="" style={{ marginLeft: 'auto' }}>
-            <p>Home page for test ......</p>
+            <p>
+              
+            </p>
           </div>
         </div>
         <div className="d-flex">
