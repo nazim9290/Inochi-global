@@ -172,11 +172,11 @@ function SideNavbar() {
           <h6 className=' text-center'>{name}</h6>
           <p className="text-center">Dhaka, Banglaseh</p>
         </Dropdown.Item>
-        {/* <Dropdown.Item>
+        <Dropdown.Item>
         <div className={`sidebar-item ${isActive('/dashbord') ? 'active' : ''}`}>
             <Link href="/dashbord">Home</Link>
           </div>
-        </Dropdown.Item> */}
+        </Dropdown.Item>
 
     
         <Dropdown.Item>
