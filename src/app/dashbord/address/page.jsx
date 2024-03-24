@@ -5,9 +5,9 @@ import EditProfile from "@/app/component/EditProfile";
 const Address = () => {
     return (
         <>
-      <div className="d-flex">
+      <div className="">
       <SideNavbar />
-      <div className="w-75" style={{ marginLeft: 'auto' }}>
+      <div className="" style={{ marginLeft: 'auto' }}>
        <EditProfile/>
       </div>
     </div>

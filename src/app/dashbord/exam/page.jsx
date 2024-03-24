@@ -6,9 +6,9 @@ import Examlist from "@/app/component/Examlist";
 const Page = () => {
     return (
         <>
-      <div className="d-flex">
+      <div className="">
       <SideNavbar />
-      <div className="w-75" style={{ marginLeft: 'auto' }}>
+      <div className="" style={{ marginLeft: 'auto' }}>
         <Examlist />
       </div>
     </div>

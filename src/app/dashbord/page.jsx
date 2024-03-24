@@ -25,7 +25,7 @@ const Dashbord = () => {
   return (
     <>
         <div className="">
-          <BasicExample />
+          <SideNavbar />
           <div className="" style={{ marginLeft: 'auto' }}>
             <p>Home page for test ......</p>
           </div>

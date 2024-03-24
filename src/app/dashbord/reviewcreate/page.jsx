@@ -5,9 +5,9 @@ import Review from "@/app/component/Review"
 const ReviewCreate = () => {
   return (
     <>
-      <div className="d-flex">
+      <div className="">
       <SideNavbar />
-      <div className="w-75" style={{ marginLeft: 'auto' }}>
+      <div className="" style={{ marginLeft: 'auto' }}>
 <Review/>
       </div>
     </div>

@@ -47,9 +47,9 @@ const Page = () => {
 
     return (
         <div>
-            <div className="d-flex">
+            <div className="">
                 <SideNavbar />
-                <div className="w-75" style={{ marginLeft: 'auto' }}>
+                <div className="" style={{ marginLeft: 'auto' }}>
                     <h1 className="text-center" style={{ color: "black" }}>Kanji </h1>
                     <div className="container">
                         <div className="d-flex justify-content-between align-items-center">

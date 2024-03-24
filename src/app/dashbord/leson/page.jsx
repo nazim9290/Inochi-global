@@ -39,9 +39,9 @@ const Page = () => {
     };
     return (
         <>
-            <div className="d-flex">
+            <div className="">
                 <SideNavbar />
-                <div className="w-75" style={{ marginLeft: 'auto' }}>
+                <div className="" style={{ marginLeft: 'auto' }}>
                     <h1 className="text-center" style={{ color: "black" }}>N5 Leasson </h1>
                    <div>
                    <p onClick={handleCardClick} style={{ border: "1px solid black",width:"80px"}}>LESSON 1</p>

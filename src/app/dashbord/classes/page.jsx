@@ -6,9 +6,9 @@ import PlayListAdd from "../../component/PlayListAdd";
 const Classes = () => {
     return (
         <>
-      <div className="d-flex">
+      <div className="">
       <SideNavbar />
-      <div className="w-75" style={{ marginLeft: 'auto' }}>
+      <div className="" style={{ marginLeft: 'auto' }}>
       <PlayListAdd />
       </div>
     </div>

@@ -14,9 +14,9 @@ const Page = () => {
     }, []);
   return (
     <>
-      <div className="d-flex">
+      <div className="">
       <SideNavbar />
-      <div className="w-75" style={{ marginLeft: 'auto' }}>
+      <div className="" style={{ marginLeft: 'auto' }}>
       {correctAnswersCount !== null && (
             <div>
               <h2>Result</h2>

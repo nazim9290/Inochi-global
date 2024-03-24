@@ -13,9 +13,9 @@ const Hirangana = () => {
   };
   return (
     <>
-      <div className="d-flex">
+      <div className="">
         <SideNavbar />
-        <div className="w-75" style={{ marginLeft: 'auto' }}>
+        <div className="" style={{ marginLeft: 'auto' }}>
           <h1 className="text-center" style={{ color: "black" }}>Kanji </h1>
           <div className="leson container">
             <h1>Lets Learn Kanji</h1>
