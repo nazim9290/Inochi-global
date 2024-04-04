@@ -139,12 +139,16 @@ const ContactForm = () => {
                                 <LocationOnIcon />
                                 
                                     <i className="fa fa-map-marker" style={{ fontSize: 24 }} /><b>Address</b>
-                                    <p>Suite 11, 41 Rickard Road, Bankstown, NSW-1000</p>
+                                    <p>SM Bhaban,Cha 75/C (3rd & 5ft floor)</p>
+                                    <p>North Badda,Dhaka-1212</p>
+                                    
                                 </div>
                                 <div className="my-4">
                                 <LocalPhoneIcon />
                                     <i className="fa fa-phone" style={{ fontSize: 24 }} /><b>Contact info</b>
-                                    <p>01******** </p>
+                                    
+                                    <p>+8801896-214840-9</p>
+                                    <p>+8801784889646</p>
                                 </div>
                                 <div className="my-4">
                                 <AccessTimeIcon/>
