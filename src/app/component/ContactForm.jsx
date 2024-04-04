@@ -146,9 +146,9 @@ const ContactForm = () => {
                                 <div className="my-4">
                                 <LocalPhoneIcon />
                                     <i className="fa fa-phone" style={{ fontSize: 24 }} /><b>Contact info</b>
-                                    
-                                    <p>+8801896-214840-9</p>
                                     <p>+8801784889646</p>
+                                    <p>+8801896-214840-9</p>
+                                    
                                 </div>
                                 <div className="my-4">
                                 <AccessTimeIcon/>
