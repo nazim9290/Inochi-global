@@ -102,6 +102,18 @@ a{
   color: white;
   text-align: center;
 }
+p{
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  padding: 3px !important;
+  margin: 5px;
+}
+h1 h2 {
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    padding: 3px !important;
+    margin: 5px;
+}
 
 .slide_img {
   width: 25%;
@@ -111,7 +123,11 @@ a{
 .slide_height {
   height: 54vh;
 }
-
+.rapperMain{
+  text-align: center !important;
+  padding: auto;
+  margin: 0px auto;
+}
 .footer {
   background-color: #e5e6e6;
 }
