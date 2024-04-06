@@ -1,5 +1,7 @@
 // Make sure the path to the CSS file is correct
 "use client"
+import React, { useState, useEffect } from 'react';
+
 import NavBar from './component/navbar';
 import MainCarusel from './component/mainCarusel';
 import Subsscribe from './component/subscribe';
@@ -12,7 +14,6 @@ import Testmonial from './component/testmonial'
 import Fotter from './component/Foter';
 import './globals.css'
 import axios from "axios"
-import React, { useState, useEffect } from 'react';
 import BlogData from './component/BlogData';
 import Programs from './component/Programs';
 

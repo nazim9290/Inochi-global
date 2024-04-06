@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from "../../../public/imgages/LOGO.png";
+import logo from "../../../public/imgages/logos.png";
 import { Navbar as BootstrapNavbar, Nav, Container } from 'react-bootstrap';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -97,7 +97,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg navbar2" id="navbar2">
           <Container fluid>
             <a className="navbar-brand" href="/">
-              <Image src={logo} alt="Bootstrap" width={30} height={24} />
+              <Image src={logo} alt="Bootstrap" width={50} height={50} />
             </a>
             <BootstrapNavbar.Toggle aria-controls="navbarSupportedContent"
               onClick={handleNavbarToggle} />
