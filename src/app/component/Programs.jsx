@@ -11,8 +11,8 @@ const Programs = () => {
     return (
         <div className="progmain">
             <div>
-                <h3 className=" text-center my-5" style={{ marginTop: '7%', color: "white" }}
-                ><b className="my-5">What We do</b></h3>
+                <h3 className=" text-center my-5" style={{ marginTop: '7%', color: "white",  padding:"5px"}}
+                ><b className="my-5 ">What We do</b></h3>
                 <p className="text-center mb-5" style={{ color: "white" }}>
                     The top reasons for you to join us
                 </p>

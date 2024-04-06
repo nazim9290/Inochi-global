@@ -2,7 +2,7 @@ import Image from "next/image"
 import logo from "../../../public/imgages/LOGO.png"
 const Rapper = () => {
   return (<>
-    <div className="wrapper text-center">
+    <div className="wrapper  text-center">
       <div className="row mb-5">
         <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 ">
           <div className="card">
@@ -29,7 +29,9 @@ const Rapper = () => {
                 </div>
                 <div className="col-12 col-sm-6 col-md-8 col-lg-8 col-xl-8 col-xxl-8 rapperMain">
                   <h4><b>JAPAN</b></h4>
-                  <p>popularity, stable economy, and a wide array of schools and universities providing career opportunities, and a settlement circumstance.</p>
+                  <p>popularity, stable economy, and a wide array of schools and
+                   universities providing career opportunities,
+                    and a settlement </p>
                 </div>
               </div>
             </div>

@@ -5,6 +5,9 @@ a{
   text-decoration: none !important;
    
 }
+.wrapperTop{
+  padding: 0px 5px;
+}
 .playerlist {
   margin: auto;
   text-align-last: end;
@@ -127,6 +130,7 @@ h1 h2 {
   text-align: center !important;
   padding: auto;
   margin: 0px auto;
+  overflow: hidden !important;
 }
 .footer {
   background-color: #e5e6e6;
