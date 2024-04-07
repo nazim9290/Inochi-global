@@ -68,12 +68,12 @@ const ContactForm = () => {
     };
 
     return (
-        <div>
-            <h3 className="text-danger text-center my-5" style={{ marginTop: '7%' }}><b className="my-5">We are always egget to hear from you</b></h3>
-            <p className="text-center mb-5">We ’ re here to help and answer any question you might have.
+        <div >
+            <h3 className="text-danger text-center my-3" style={{ marginTop: '7%' }}><b className="my-5">We are always egget to hear from you</b></h3>
+            <p className="text-center mb-3">We ’ re here to help and answer any question you might have.
                 We look forward to hearing from you!</p>
-            <div className="my-5 wrapper">
-                <p>Fill the form below so we can get to know you and you needs better.</p>
+            <div className="my-3 wrapper">
+                <p className="text-center ">Fill the form below so we can get to know you and you needs better.</p>
                 <div className="card shadow rounded my-5">
                     <div className="card-body ">
                         <div className="row">

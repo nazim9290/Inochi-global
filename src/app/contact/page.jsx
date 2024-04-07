@@ -11,7 +11,7 @@ import MainBanner from '../component/MainBanner';
 const Contact = () => {
  
   return (
-    <div>
+    <div >
       <NavBar />
       <MainBanner title="Contact Page" />
       <ContactForm />

@@ -25,7 +25,7 @@ const Service = () => {
   };
 
   return (
-    <div>
+    <div className="componentStyle">
       {/* OUR SERVICE */}
       <h3 className="text-danger text-center my-5" style={{ marginTop: "7%" }}>
         <b className="my-5">OUR SERVICE</b>

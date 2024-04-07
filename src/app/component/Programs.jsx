@@ -8,8 +8,9 @@ import HandshakeIcon from '@mui/icons-material/Handshake';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import PodcastsIcon from '@mui/icons-material/Podcasts';
 const Programs = () => {
-    return (
-        <div className="progmain">
+    return ( 
+
+        <div className="progmain componentStyle">
             <div>
                 <h3 className=" text-center my-5" style={{ marginTop: '7%', color: "white",  padding:"5px"}}
                 ><b className="my-5 ">What We do</b></h3>

@@ -1,6 +1,10 @@
+
 body {
-  overflow-x: hidden !important; /* This will hide the scrollbar */
+  overflow-x: hidden !important;
+  margin-bottom: -6px !important;
+  -moz-margin-bottom: -10px !important; /* Firefox specific */
 }
+
 a{
   text-decoration: none !important;
    
@@ -109,7 +113,10 @@ p{
   text-align: justify !important;
   text-justify: inter-word !important;
   padding: 3px !important;
-  margin: 5px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 h1 h2 {
     text-align: justify !important;
@@ -129,7 +136,7 @@ h1 h2 {
 }
 .ftTitle{
 
-  margin-top: 19px;
+  margin-top: 30px !important;
 }
 .slide_height {
   height: 54vh;
@@ -157,6 +164,27 @@ h1 h2 {
     /* Center the wrapper */
     padding: 5px;
   }
+  .teamItem {
+    margin: 2px 165px !important;
+    text-align: center !important;
+}
+
+
+}
+
+@media (min-width: 200px) {
+  .wrapper1 {
+    width: 100%;
+    margin: 0 auto;
+    /* Center the wrapper */
+    padding: 5px;
+  }
+  .teamItem {
+    margin: 2px 100px !important;
+    text-align: center !important;
+}
+
+
 }
 
 @media (min-width: 768px) {
@@ -166,6 +194,11 @@ h1 h2 {
     /* Center the wrapper */
     padding: 5px;
   }
+  .teamItem{
+    margin: 0px auto !important;
+    text-align: center !important;
+ }
+
 }
 
 @media (min-width: 992px) {
@@ -181,6 +214,11 @@ h1 h2 {
     width: 15%;
     height: 25%;
   }
+  .teamItem{
+    margin: 0px auto !important;
+    text-align: center !important;
+ }
+
 }
 
 
@@ -486,6 +524,10 @@ td {
 .teslast{
   width: 31% !important;
 
+}
+.componentStyle{
+  padding: 10px 0px;
+  margin: 10px 0px;
 }
 .programs{
   background-color: transparent !important;

@@ -20,7 +20,7 @@ const BlogData = ({page}) => {
     }
   };
   return (
-    <div className="container">
+    <div className="container componentStyle">
            {page ==="main" ?(
             <div className="row">
         {blogs.slice(0, 3).map((blog, index) => (

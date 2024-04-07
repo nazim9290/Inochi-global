@@ -31,8 +31,8 @@ const Subsscribe = () => {
   };
 
   return (
-    <>
-      <div className="mt-5" style={{ backgroundColor: "#12b0bc" }}>
+    <div className="subscriber componentStyle">
+      <div className="mt-5 " style={{ backgroundColor: "#12b0bc" }}>
         <div className="row">
           <div className="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-12 col-xxl-12 me-5 my-5">
             <div className="container text-center">
@@ -58,7 +58,7 @@ const Subsscribe = () => {
                 <div className="input-group-append">
                   <button
                     type="submit"
-                    className="btn btn-btn-secondary"
+                    className="btn btn-btn-primary"
                     style={{ backgroundColor: "#ef4444" }}
                     disabled={loading}
                   >
@@ -83,7 +83,7 @@ const Subsscribe = () => {
 
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

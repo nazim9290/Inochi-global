@@ -29,13 +29,13 @@ const Team = () => {
     }
   };
   return (
-    <div className="mb-5" style={{ marginTop: '7%' }}>
+    <div className="mb-5 componentStyle " style={{ marginTop: '7%' }}>
       <h3 className="text-danger text-center my-5 container"><b className="my-5">OUR TEAM</b></h3>
 
       {loading ? (
         <div className="text-center">Loading...</div>
       ) : (
-        <div className="container">
+        <div className="container ">
         <div className="row">
           {
             blogs.map(item => (

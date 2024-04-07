@@ -40,9 +40,8 @@ const MainCarusel = () => {
       </Carousel.Item>
     ));
   };
-
   return (
-    <div className='main-prestener'>
+    <div className='main-prestener componentStyle'>
       <Carousel>
         {renderCarousel()}
       </Carousel>

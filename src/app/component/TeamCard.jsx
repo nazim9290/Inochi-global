@@ -6,7 +6,7 @@ const TeamCard = ({ data }) => {
   const [isHovered, setIsHovered] = useState(false);
 // console.log(data.image.url)
   return (
-    <>
+    <div className='teamItem'>
       {data.image ? (
         <>
           <div className="my-5">
@@ -39,7 +39,7 @@ const TeamCard = ({ data }) => {
       ) : (
         <></>
       )}
-    </>
+    </div>
   );
 };
 

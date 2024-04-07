@@ -18,7 +18,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div id="carouselExampleCaptions" className="carousel slide my-5" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" className="carousel slide my-5 componentStyle" data-bs-ride="carousel">
       <div className="carousel-indicators">
         <button
           type="button"

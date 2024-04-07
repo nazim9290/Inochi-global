@@ -4,7 +4,7 @@ import logo from "../../../public/imgages/LOGO.png"
 const WellStarter=()=>{
     return(
         <>
-<div className="my-5">
+<div className="my-5 componentStyle">
   <div className="card shadow rounded my-5">
     <div className="card-body ">
       <div className="row">

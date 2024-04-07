@@ -1,7 +1,8 @@
 import Image from "next/image"
 import logo from "../../../public/imgages/LOGO.png"
 const Rapper = () => {
-  return (<>
+  return (
+  <div className="componentStyle">
     <div className="wrapper  text-center">
       <div className="row mb-5">
         <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 ">
@@ -58,6 +59,6 @@ const Rapper = () => {
       </div>
     </div>
 
-  </>)
+  </div>)
 }
 export default Rapper
