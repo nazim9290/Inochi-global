@@ -122,7 +122,10 @@ h1 h2 {
   width: 25%;
   height: 25%;
 }
+.ftTitle{
 
+  margin-top: 19px;
+}
 .slide_height {
   height: 54vh;
 }
@@ -130,7 +133,6 @@ h1 h2 {
   text-align: center !important;
   padding: auto;
   margin: 0px auto;
-  overflow: hidden !important;
 }
 .footer {
   background-color: #e5e6e6;
