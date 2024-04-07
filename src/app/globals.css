@@ -122,6 +122,11 @@ h1 h2 {
   width: 25%;
   height: 25%;
 }
+.sebscribe{
+  width: 50% !important;
+  text-align: center !important;
+  margin: 0px auto !important;
+}
 .ftTitle{
 
   margin-top: 19px;
