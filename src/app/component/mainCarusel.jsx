@@ -23,18 +23,18 @@ const MainCarusel = () => {
   const renderCarousel = () => {
     return images.map(item => (
       <Carousel.Item key={item.id}>
-     
-      {/* <Image
-        
-        alt="test"
-        src={item.image.url}
-        sizes="(max-width: 100%) 100vw, (max-width: 1200px) 50vw, 33vw"
-      /> */}
- <Image
-          className="d-block w-100"
+     <Image
+          className="d-block w-100 mainImage"
           src={item.image.url}
           height={300}
-          width={0}
+          width={1360}
+          alt={item}
+        /> 
+         <Image
+          className="d-block w-100 mainImagerep"
+          src={item.image.url}
+          height={170}
+          width={600}
           alt={item}
         /> 
       </Carousel.Item>

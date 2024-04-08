@@ -1,19 +1,4 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {}
 
-// module.exports = nextConfig
-// const { createProxyMiddleware } = require('http-proxy-middleware');
-
-// module.exports = {
-//   async rewrites() {
-//     return [
-//       {
-//         source: '/api/:path*',
-//         destination: 'http://your-backend-base-url/:path*', // Replace with your actual backend base URL
-//       },
-//     ];
-//   },
-// };
 /** @type {import('next').NextConfig} */
 
 const { createProxyMiddleware } = require('http-proxy-middleware');
@@ -30,13 +15,20 @@ const nextConfig = {
       {
         source: '/api/:path*',
         destination: 'http://45.77.247.238:5000/api/:path*',
-
       },
     ];
   },
   images: {
-    domains: ['res.cloudinary.com','i.ytimg.com']
+    domains: ['res.cloudinary.com','i.ytimg.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        pathname: '**',
+      },
+    ],
   }
+
 };
 
 module.exports = nextConfig;
