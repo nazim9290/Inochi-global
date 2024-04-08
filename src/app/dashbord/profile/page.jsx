@@ -114,9 +114,9 @@ const handleSubmit = async (e) => {
 
     return (
         <UserRoute>
-            <div className="">
+            <div className="d-flex">
                 <SideNavbar />
-                <div className="" style={{ marginLeft: 'auto' }}>
+                <div className="w-75" style={{ marginLeft: 'auto' }}>
                     {/* here i wanna show a from  and use update for  */}
                     <h1>Student Profile</h1>
                     <form className="needs-validation" noValidate onSubmit={handleSubmit}>

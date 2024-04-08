@@ -154,9 +154,33 @@ h1 h2 {
 .banner_height {
   height: 50vh;
 }
-.mainImagerep{
-  display: none;
+.mainImagerep {
+  display: none !important;
 }
+.wellStart{
+padding: 18px 0px;
+}
+@media (max-width: 992px) {
+  .mainImagerep {
+    display: block !important; /* or display: inline-block; depending on your needs */
+  }
+  .mainImage {
+    display: none !important; 
+  }
+}
+
+/* .mainImagerep{
+  display: none !important;
+}
+@media (max-width: 992px) {
+  .mainImagerep{
+    display: show !important;
+  }
+  .mainImage{
+    display: none !important;
+   }
+   
+} */
 @media (min-width: 576px) {
   .wrapper1 {
     width: 100%;
@@ -200,15 +224,7 @@ h1 h2 {
  } */
 
 }
-@media (max-width: 992px) {
-  
-  .mainImage{
-    display: none !important;
-   }
-   .mainImagerep{
-     display: show;
-   }
-}
+
 @media (min-width: 992px) {
   .slide_img {
     width: 20%;

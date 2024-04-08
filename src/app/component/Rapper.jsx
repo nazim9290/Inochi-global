@@ -15,6 +15,7 @@ const Rapper = () => {
                 <div className="col-12 col-sm-6 col-md-8 col-lg-8 col-xl-8 col-xxl-8 rapperMain">
                   <h4><b className="text-center ">UK-EUROPE-USA</b></h4>
                   <p className="text-center ">The U.K presents an amazing opportunity for students who are looking for UG and PG courses abroad</p>
+                <br/>
                 </div>
               </div>
             </div>
@@ -51,6 +52,8 @@ const Rapper = () => {
                   <p>Study in Canada as an international student,
                    extend your study permit and find out about
                     working while you study</p>
+                                    <br/>
+
                 </div>
               </div>
             </div>

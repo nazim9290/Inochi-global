@@ -6,9 +6,9 @@ import Link from "next/link";
 const Hirangana = () => {
   return (
     <>
-      <div className="">
+      <div className="d-flex">
         <SideNavbar />
-        <div className="" style={{ marginLeft: 'auto' }}>
+        <div className="w-75" style={{ marginLeft: 'auto' }}>
           <Link href="/dashbord/katakanta">
             <h1 className="text-center" style={{ color: "black" }}>Katakanta</h1>
           </Link>
