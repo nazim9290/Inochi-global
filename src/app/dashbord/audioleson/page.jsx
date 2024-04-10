@@ -5,7 +5,7 @@ import FullLeasonDesh from "@/app/component/FullLeasonDesh";
 const Page = () => {
     return (
         <>
-      <div className="d-flex">
+      <div className="d-flex  sideres">
       <SideNavbar />
       <div className="w-75" style={{ marginLeft: 'auto' }}>
     <FullLeasonDesh/>

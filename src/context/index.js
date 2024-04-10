@@ -36,7 +36,7 @@ const UserProvider = ({ children }) => {
       if (res.status === 401 && res.config && !res.config.__isRetryRequest) {
         setState({ user: {}, token: "" }); // Reset the state
         window.localStorage.removeItem("auth");
-        router.push("/login");
+        // router.push("/login");
       }
       return Promise.reject(error); // Ensure the error is propagated after handling
     }

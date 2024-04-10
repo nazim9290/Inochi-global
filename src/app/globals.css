@@ -426,6 +426,18 @@ padding: 18px 0px;
 
 
 @media screen and (max-width: 768px) {
+  
+
+  .d-flex {
+    /* Replace 'd-flex' with your desired class */
+    display: block; /* Or any other display property as per your requirement */
+  }
+  .w-75 {
+    /* Replace 'w-75' with your desired class */
+    width: 100%; /* Set width to 100% when screen width is below 768px */
+  }
+
+
   #sidebar {
     width: 200px;
   }
@@ -596,23 +608,9 @@ border-radius: 8px;
 }
 
 
-/* data */
-
-/* width: 283.2px;
-height: 236px;
 
 
-/* Inside auto layout */
-/* flex: none;
-order: 0;
-flex-grow: 0; */
 
 
-/* Resources Exam Video PDF About japan */
 
-/* position: absolute;
-width: 283.2px;
-height: 236px;
-left: 19.6px;
-top: 44.5px; */
 
