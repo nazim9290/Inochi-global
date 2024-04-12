@@ -19,10 +19,10 @@ const ContactForm = () => {
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     };
 
-    const validatePhone = (phone) => {
-        // You can use a more sophisticated phone number validation library or regex
-        return /^\d{10}$/.test(phone);
-    };
+    // const validatePhone = (phone) => {
+    //     // You can use a more sophisticated phone number validation library or regex
+    //     return /^\d{10}$/.test(phone);
+    // };
 
     const handleContact = async (e) => {
         e.preventDefault();
@@ -33,10 +33,10 @@ const ContactForm = () => {
             return;
         }
 
-        if (!validatePhone(phone.trim())) {
-            setAlert({ type: 'error', message: 'Please enter a valid phone number.' });
-            return;
-        }
+        // if (!validatePhone(phone.trim())) {
+        //     setAlert({ type: 'error', message: 'Please enter a valid phone number.' });
+        //     return;
+        // }
 
         if (!validateEmail(email.trim())) {
             setAlert({ type: 'error', message: 'Please enter a valid email address.' });
@@ -93,7 +93,7 @@ const ContactForm = () => {
                                     </div>
                                     <div className="mb-3">
                                         <label htmlFor="exampleFormControlInput1" className="form-label">Phone</label>
-                                        <input type="phone" className="form-control" placeholder="01********" required
+                                        <input type="name" className="form-control" placeholder="01********" required
                                             value={phone}
                                             onChange={(e) => setPhone(e.target.value)}
                                         />

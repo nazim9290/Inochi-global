@@ -25,29 +25,31 @@ const SeminarSection = () => {
 
     }
   };
-    return (
-        <>
-        <div className="wrapper">
-  <h3 className=" my-5" style={{marginTop: '7%'}}><b className="my-5">JOIN FREE SEMINAR</b></h3>
-  {loading ? (
-        <div className="text-center">Loading...</div>
-      ) : (
-        <div className="row">
-          {
-            blogs.map(item => (
-              <div key={item._id} className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4"
-              >
-                <SeminerCard data={item} />
-              </div>
-            ))
-          }
-        </div>
-      )}
+  return (
+    <>
+      <div className="wrapper">
+        <h3 className=" my-5 seminer_header"><>JOIN FREE SEMINAR</></h3>
+        <br/>
+        <br/>
+        {loading ? (
+          <div className="text-center">Loading...</div>
+        ) : (
+          <div className="row">
+            {
+              blogs.map(item => (
+                <div key={item._id} className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4"
+                >
+                  <SeminerCard data={item} />
+                </div>
+              ))
+            }
+          </div>
+        )}
 
-</div>
+      </div>
 
-        </>
-    );
+    </>
+  );
 }
 
 export default SeminarSection;

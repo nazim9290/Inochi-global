@@ -58,7 +58,7 @@ const LoginForm = () => {
             <div className="mb-3">
                 <label className="form-label">Phone</label>
                <input
-                        type="number"
+                        type="name"
                         className="form-control"
                         placeholder="Enter your Mobile number"
                         value={phone}
