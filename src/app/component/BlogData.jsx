@@ -20,7 +20,7 @@ const BlogData = ({page}) => {
     }
   };
   return (
-    <div className="container componentStyle ">
+    <div className="container main-blogs componentStyle ">
     <h1 className="text-center">
       Our Blogs
     </h1>

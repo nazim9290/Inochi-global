@@ -27,9 +27,9 @@ const Fotter=()=>{
       </div>
       <div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 ftTitle">
         <p><b className="text-uppercase">legal</b></p>
-        <a href="#" className="text-decoration-none text-reset">Terms of use</a><br />
-        <a href="#" className="text-decoration-none text-reset">Privacy policy</a><br />
-        <a href="#" className="text-decoration-none text-reset">Cookie policy</a><br />
+        <a href="/terms" className="text-decoration-none text-reset">Terms of use</a><br />
+        <a href="/privecy" className="text-decoration-none text-reset">Privacy policy</a><br />
+        <a href="/policy" className="text-decoration-none text-reset">Cookie policy</a><br />
       </div>
     </div>
     <p className="text-center">Copyright © 2023-All right reserved by  Inochi Global Education</p>
