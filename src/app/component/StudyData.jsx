@@ -23,6 +23,7 @@ const StudyData = () => {
   return (
     <div className="container">
             <div className="row">
+            <h1 className="text-center"> Study In Japan</h1>
                 {blogs.map((blog, index) => (
                     <div key={index} className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                         <BlogCard data={blog} />

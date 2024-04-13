@@ -621,3 +621,6 @@ border-radius: 8px;
 .main-blogs{
 margin:0px auto;
 }
+.linkbtns{
+  text-decoration: none !important;
+}
