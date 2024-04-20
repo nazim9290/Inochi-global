@@ -1,7 +1,7 @@
 
 body {
   
-  overflow-y: hidden !important;
+  overflow-x: hidden !important;
   margin-bottom: -6px !important;
   -moz-margin-bottom: -10px !important; /* Firefox specific */
 }
