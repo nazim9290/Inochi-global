@@ -476,7 +476,9 @@ padding: 18px 0px;
     display: block;
     width: 100%;
   }
-
+.footer{
+  margin-right:-10px !important
+}
   #content nav form.show .form-input button {
     width: 36px;
     height: 100%;
