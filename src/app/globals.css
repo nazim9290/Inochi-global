@@ -169,6 +169,10 @@ padding: 18px 0px;
   .mainImage {
     display: none !important; 
   }
+  .teamItem{
+    margin: 0px auto !important;
+    text-align: center !important;
+ }
 }
 
 /* .mainImagerep{
@@ -189,6 +193,9 @@ padding: 18px 0px;
     margin: 0 auto;
     /* Center the wrapper */
     padding: 5px;
+  }
+  .mainImage {
+    display: none !important; 
   }
   .teamItem {
     margin: 2px 165px !important;
@@ -211,8 +218,11 @@ padding: 18px 0px;
     margin: 0 auto;
     padding: 5px;
   }
+  .mainImage {
+    display: none !important; 
+  }
   .teamItem {
-    margin: 2px 100px !important;
+    margin: 2px 30px !important;
     text-align: center !important;
 }
 .footer{
@@ -244,10 +254,10 @@ padding: 18px 0px;
     margin: 0 auto;
     padding: 5px;
   }
-  .teamItem {
-    /* margin: 2px 50px !important; */
-    text-align: center !important;
-}
+  .mainImage {
+    display: none !important; 
+  }
+ 
 .row {
   text-align: center;
   margin: 0px auto;
@@ -260,7 +270,6 @@ padding: 18px 0px;
   margin-left: 0px !important;
 }
 
-
 }
 
 
@@ -272,9 +281,12 @@ padding: 18px 0px;
     padding: 5px;
   }
   .teamItem{
-    margin: 0px auto !important;
+    margin: 0px 30 !important;
     text-align: center !important;
  }
+ .mainImage {
+    display: none !important; 
+  }
  /* .mainImage{
   display: none !important;
  } */
@@ -286,7 +298,10 @@ padding: 18px 0px;
     width: 20%;
     height: 25%;
   }
-
+  .teamItem{
+    margin: 0px auto !important;
+    text-align: center !important;
+ }
 }
 
 @media (min-width: 1200px) {
@@ -333,7 +348,10 @@ padding: 18px 0px;
     height: auto;
     position: relative;
   }
-
+  .teamItem{
+    margin: 0px auto !important;
+    text-align: center !important;
+ }
   .main-panel {
     margin-left: 0;
   }
@@ -482,7 +500,10 @@ padding: 18px 0px;
 
 
 @media screen and (max-width: 768px) {
-  
+  .teamItem{
+    margin: 0px auto !important;
+    text-align: center !important;
+ }
 
   .d-flex {
     /* Replace 'd-flex' with your desired class */
@@ -561,6 +582,10 @@ padding: 18px 0px;
   #content main .table-data .todo .todo-list {
     min-width: 420px;
   }
+  .teamItem{
+    margin: 0px auto !important;
+    text-align: center !important;
+ }
 }
 
 table{

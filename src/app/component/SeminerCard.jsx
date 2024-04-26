@@ -15,11 +15,19 @@ const SeminerCard = ({ data }) => {
         <>
             <div className="card  shadow rounded">
                 <div className="card-body text-center">
-                    <Image src={data.image.url} alt="Bootstrap" width="300" height="350"
+
+                    
+                    <Image
+                        className="d-block w-100 mainImagerep"
+                        src={data.image.url}
+                        height={170}
+                        width={200}
+                        alt="inochi"
                     />
+
+
                     <br />
                     <h3>{data.title}</h3>
-
                     <p className="text-center mb-5">
                         {data.subtitle}
                     </p>

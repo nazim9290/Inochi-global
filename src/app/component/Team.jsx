@@ -18,9 +18,7 @@ const Team = () => {
   const fetchUserPosts = async () => {
     try {
       const { data } = await axios.get("api/team-member");
-      // console.log("user posts => ", data.team);
       setLoading(false); // Set loading to false when data is fetched
-
       setBlogs(data.team);
     } catch (err) {
       console.log(err);

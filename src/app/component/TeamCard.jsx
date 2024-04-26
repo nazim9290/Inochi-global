@@ -6,10 +6,10 @@ const TeamCard = ({ data }) => {
   const [isHovered, setIsHovered] = useState(false);
 // console.log(data.image.url)
   return (
-    <div className='teamItem'>
+    <div className=''>
       {data.image ? (
         <>
-          <div className="my-5">
+          <div className="my-5 ">
             <div className="row my-lg-4">
               <div
                 onMouseEnter={() => setIsHovered(true)}
