@@ -13,7 +13,7 @@ const StudyData = () => {
   const fetchUserPosts = async () => {
     try {
       const { data } = await axios.get("api/blogs-study");
-      console.log("user posts => ", data.publishedstudy);
+      // console.log("user posts => ", data.publishedstudy);
       setBlogs(data.publishedstudy);
     } catch (err) {
       console.log(err);
