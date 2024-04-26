@@ -16,9 +16,7 @@ const SeminerCard = ({ data }) => {
             <div className="card  shadow rounded">
                 <div className="card-body text-center">
                     <Image src={data.image.url} alt="Bootstrap" width="300" height="350"
-
                     />
-
                     <br />
                     <h3>{data.title}</h3>
 
@@ -33,7 +31,7 @@ const SeminerCard = ({ data }) => {
                             <CalendarMonthIcon /> <span>{data.date} </span>
                         </div>
                     </div>
-                    <br/>
+                    <br />
                     <button type="button" className="btn btn-primary me-2" onClick={handlejoin}>Book now</button>
                 </div>
             </div>

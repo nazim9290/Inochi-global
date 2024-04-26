@@ -12,7 +12,7 @@ const Fotter=()=>{
         Education since 2019</a>
       </div>
       <div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 ftTitle">
-        <a href="#"><b className="text-uppercase ">service</b></a><br /><br />
+        <a href="#"className="text-decoration-none text-reset"><b className="text-uppercase ">service</b></a><br /><br />
 
         <a href="#" className="text-decoration-none text-reset">Branding</a><br />
         <a href="#" className="text-decoration-none text-reset">Design</a><br />
@@ -20,14 +20,14 @@ const Fotter=()=>{
         <a href="#" className="text-decoration-none text-reset">Advisment</a><br />
       </div>
       <div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 ftTitle">
-        <a href="#"><b className="text-uppercase">company</b></a><br /><br />
+        <a href="#" className="text-decoration-none text-reset"><b className="text-uppercase">company</b></a><br /><br />
         <a href="#" className="text-decoration-none text-reset">About us</a><br />
         <a href="#" className="text-decoration-none text-reset">Contact</a><br />
         <a href="#" className="text-decoration-none text-reset">Jobs</a><br />
         <a href="#" className="text-decoration-none text-reset">Press kit</a><br />
       </div>
       <div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 ftTitle">
-        <a href="#"><b className="text-uppercase">legal</b></a><br /><br />
+        <a href="#" className="text-decoration-none text-reset"><b className="text-uppercase">legal</b></a><br /><br />
         <a href="/terms" className="text-decoration-none text-reset">Terms of use</a><br />
         <a href="/privecy" className="text-decoration-none text-reset">Privacy policy</a><br />
         <a href="/policy" className="text-decoration-none text-reset">Cookie policy</a><br />
