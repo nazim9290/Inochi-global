@@ -1,6 +1,7 @@
 
 body {
   overflow-x: hidden !important;
+  /* overflow-y: hidden !important; */
   margin-bottom: -6px !important;
   -moz-margin-bottom: -10px !important; /* Firefox specific */
 }
@@ -192,17 +193,29 @@ padding: 18px 0px;
     margin: 2px 165px !important;
     text-align: center !important;
 }
+.footer{
+  margin-right: -10px;
 }
-@media (min-width: 200px) {
+}
+
+
+
+
+
+
+
+@media (min-width: 376px) {
   .wrapper1 {
     width: 100%;
     margin: 0 auto;
-    /* Center the wrapper */
     padding: 5px;
   }
   .teamItem {
     margin: 2px 100px !important;
     text-align: center !important;
+}
+.footer{
+  margin-right: -10px;
 }
 
 
@@ -624,3 +637,8 @@ margin:0px auto;
 .linkbtns{
   text-decoration: none !important;
 }
+
+
+
+
+

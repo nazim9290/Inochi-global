@@ -38,7 +38,9 @@
     "react-dom": "^18",
     "react-toastify": "^7.0.4",
     "react-youtube": "^10.1.0",
-    "reactstrap": "^9.2.1"
+    "reactstrap": "^9.2.1",
+    "@stripe/react-stripe-js": "^2.5.0",
+    "@stripe/stripe-js": "^3.0.6"
   },
   "devDependencies": {
     "eslint": "^8",

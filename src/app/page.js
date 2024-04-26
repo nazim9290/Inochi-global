@@ -16,7 +16,6 @@ import './globals.css'
 import axios from "axios"
 import BlogData from './component/BlogData';
 import Programs from './component/Programs';
-
 const HOME = () => {
   const [caruselData, setCaruselData] = useState([]);
 

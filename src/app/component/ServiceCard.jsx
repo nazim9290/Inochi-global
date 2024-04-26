@@ -120,12 +120,13 @@ const ServiceCard = ({ data }) => {
                             <div onClick={handleCardClick} style={{ cursor: 'pointer' }}>
                                 <div className="card shadow rounded">
                                     <div className="card-body text-center">
-                                        <Image src={data.image.url} alt="Bootstrap" width={150} height={150} /><br />
-                                        <p className="text-center mb-5"><b>{data.title}</b></p>
+                                        <Image src={data.image.url} alt="Bootstrap" 
+                                        width={200} height={200} /><br />
+                                        <p className="text-center mb-2"><b>{data.title}</b></p>
                                         {showFullContent ? (
-                                            <p className="text-center mb-5"><b>{data.content}</b></p>
+                                            <p className="text-center mb-2"><b>{data.content}</b></p>
                                         ) : (
-                                            <p className="text-center mb-5"><b>{trimContent(data.content, 10)}</b></p>
+                                            <p className="text-center mb-2"><b>{trimContent(data.content, 10)}</b></p>
                                         )}
                                         {!showFullContent && (
                                             <button className="btn btn-link linkbtns" onClick={() => 
