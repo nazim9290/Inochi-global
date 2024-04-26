@@ -217,8 +217,21 @@ padding: 18px 0px;
 .footer{
   margin-right: -10px;
 }
+.row {
+  text-align: center;
+  margin: 0px auto;
+}
 
 
+}
+@media (max-width: 480px) {
+  body {
+   direction:initial;
+  }
+  .row {
+    text-align: center;
+    margin: 0px auto;
+  }
 }
 @media (min-width: 280px) {
   .wrapper1 {
@@ -227,11 +240,19 @@ padding: 18px 0px;
     padding: 5px;
   }
   .teamItem {
-    margin: 2px 100px !important;
+    /* margin: 2px 50px !important; */
     text-align: center !important;
 }
+.row {
+  text-align: center;
+  margin: 0px auto;
+}
+
 .footer{
   margin-right: -10px;
+}
+.ft-l {
+  margin-left: 0px !important;
 }
 
 
