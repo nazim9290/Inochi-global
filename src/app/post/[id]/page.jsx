@@ -54,6 +54,7 @@ import { usePathname } from 'next/navigation';
 import axios from 'axios';
 import Navbar from '../../component/navbar';
 import Image from 'next/image';
+import {ShareSocial} from 'react-share-social' 
 
 const Page = () => {
   const [post, setPost] = useState({});
@@ -61,6 +62,8 @@ const Page = () => {
   const segments = pathname.split('/');
   const id = segments[segments.length - 1];
 
+  const sitelink = `http://inochieducation.com${pathname}`;
+console.log(sitelink)
   const fetchPost = useCallback(async () => {
     try {
       const { data } = await axios.get(`http://45.77.247.238:5000/api/singleblogs/${id}`);
@@ -90,8 +93,18 @@ const Page = () => {
 />
           </div>
           <p>{post.content}</p>
+<br/>
+<br/>
+          <ShareSocial 
+  title={'sharing happiness'} 
+  url={sitelink}  // Pass sitelink variable here
+
+  socialTypes= {['facebook','twitter']}
+/>
         </div>
+      
       )}
+
     </div>
   );
 };
