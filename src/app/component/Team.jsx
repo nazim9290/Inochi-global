@@ -8,7 +8,6 @@ import TeamCard from "./TeamCard.jsx"
 const Team = () => {
   // /team-member
   const [loading, setLoading] = useState(true);
-
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     fetchUserPosts();
@@ -19,7 +18,10 @@ const Team = () => {
     try {
       const { data } = await axios.get("api/team-member");
       setLoading(false); // Set loading to false when data is fetched
-      setBlogs(data.team);
+       const sortdat = data.team.sort((a, b) => a.position - b.position);
+
+      setBlogs(sortdat);
+      // console.log(data.team)
     } catch (err) {
       console.log(err);
       setLoading(false); // Set loading to false when data is fetched
@@ -34,16 +36,16 @@ const Team = () => {
         <div className="text-center">Loading...</div>
       ) : (
         <div className="container ">
-        <div className="row">
-          {
-            blogs.map(item => (
-              <div key={item._id} className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3"
-              >
-                <TeamCard data={item} />
-              </div>
-            ))
-          }
-        </div>
+          <div className="row">
+            {
+              blogs.map(item => (
+                <div key={item._id} className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3"
+                >
+                  <TeamCard data={item} />
+                </div>
+              ))
+            }
+          </div>
         </div>
       )}
 

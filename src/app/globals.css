@@ -1,30 +1,35 @@
-
 body {
   overflow-x: hidden !important;
   /* overflow-y: hidden !important; */
   margin-bottom: -6px !important;
-  -moz-margin-bottom: -10px !important; /* Firefox specific */
+  -moz-margin-bottom: -10px !important;
+  /* Firefox specific */
 }
 
-a{
+a {
   text-decoration: none !important;
-   
+
 }
-.wrapperTop{
+
+.wrapperTop {
   padding: 0px 5px;
 }
+
 .playerlist {
   margin: auto;
   text-align-last: end;
 }
+
 .navbar2 {
   background-color: #cbd5e1;
 }
-.main-prestener{
-  width: 100%  !important;
+
+.main-prestener {
+  width: 100% !important;
   margin: 0px;
- text-align: center !important;
+  text-align: center !important;
 }
+
 #navbar2.sticky {
   position: fixed;
   top: 0;
@@ -108,7 +113,8 @@ a{
   color: white;
   text-align: center;
 }
-p{
+
+p {
   text-align: justify !important;
   text-justify: inter-word !important;
   padding: 3px !important;
@@ -119,60 +125,77 @@ p{
 }
 
 h1 h2 {
-    text-align: justify !important;
-    text-justify: inter-word !important;
-    padding: 3px !important;
-    margin: 5px;
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  padding: 3px !important;
+  margin: 5px;
 }
 
 .slide_img {
   width: 25%;
   height: 25%;
 }
-.sebscribe{
+
+.sebscribe {
   width: 50% !important;
   text-align: center !important;
   margin: 0px auto !important;
 }
-.ftTitle{
+
+.ftTitle {
 
   margin-top: 30px !important;
 }
+
 .slide_height {
   height: 54vh;
 }
-.rapperMain{
+
+.rapperMain {
   text-align: center !important;
   padding: auto;
   margin: 0px auto;
 }
+
 .footer {
   background-color: #e5e6e6;
 }
-.ft-l{
+
+.ft-l {
   margin-left: 2rem !important;
 
 }
+
 .banner_height {
   height: 50vh;
 }
+
 .mainImagerep {
   display: none !important;
 }
-.wellStart{
-padding: 18px 0px;
+
+.wellStart {
+  padding: 18px 0px;
 }
+
 @media (max-width: 992px) {
   .mainImagerep {
-    display: block !important; /* or display: inline-block; depending on your needs */
+    display: block !important;
+    /* or display: inline-block; depending on your needs */
   }
+
   .mainImage {
-    display: none !important; 
+    display: none !important;
   }
-  .teamItem{
+
+  .team-er {
+    margin: auto 11px;
+  }
+
+  .teamItem {
     margin: 0px auto !important;
     text-align: center !important;
- }
+  }
 }
 
 /* .mainImagerep{
@@ -194,23 +217,24 @@ padding: 18px 0px;
     /* Center the wrapper */
     padding: 5px;
   }
+
   .mainImage {
-    display: none !important; 
+    display: none !important;
   }
+
   .teamItem {
     margin: 2px 165px !important;
     text-align: center !important;
+  }
+
+  .footer {
+    margin-right: -10px;
+  }
+
+  .team-er {
+    margin: auto 11px;
+  }
 }
-.footer{
-  margin-right: -10px;
-}
-}
-
-
-
-
-
-
 
 @media (min-width: 376px) {
   .wrapper1 {
@@ -218,57 +242,82 @@ padding: 18px 0px;
     margin: 0 auto;
     padding: 5px;
   }
+
   .mainImage {
-    display: none !important; 
+    display: none !important;
   }
+
   .teamItem {
     margin: 2px 30px !important;
     text-align: center !important;
-}
-.footer{
-  margin-right: -10px;
-}
-
-.row {
-  text-align: center;
-  margin: 0px auto;
-}
-
-
-}
-@media (max-width: 480px) {
-  body {
-   direction:initial;
   }
+
+  .team-er {
+    margin: auto 11px;
+  }
+
+  .footer {
+    margin-right: -10px;
+  }
+
   .row {
     text-align: center;
     margin: 0px auto;
   }
-  .footer>a{
+
+
+}
+
+@media (max-width: 480px) {
+  body {
+    direction: initial;
+  }
+
+  .row {
+    text-align: center;
+    margin: 0px auto;
+  }
+
+  .footer>a {
     text-align: start !important;
   }
+
+  .team-er {
+    margin: auto 11px;
+  }
+
+  .team-er {
+    margin: auto 11px;
+  }
 }
+
 @media (min-width: 280px) {
   .wrapper1 {
     width: 100%;
     margin: 0 auto;
     padding: 5px;
   }
-  .mainImage {
-    display: none !important; 
-  }
- 
-.row {
-  text-align: center;
-  margin: 0px auto;
-}
 
-.footer{
-  margin-right: -10px;
-}
-.ft-l {
-  margin-left: 0px !important;
-}
+  .mainImage {
+    display: none !important;
+  }
+
+  .team-er {
+    margin: auto 11px;
+  }
+
+  .row {
+    text-align: center;
+    margin: 0px auto;
+  }
+
+  .footer {
+    margin-right: -10px;
+  }
+
+  .ft-l {
+    margin-left: 0px !important;
+  }
 
 }
 
@@ -280,14 +329,17 @@ padding: 18px 0px;
     /* Center the wrapper */
     padding: 5px;
   }
-  .teamItem{
+
+  .teamItem {
     margin: 0px 30 !important;
     text-align: center !important;
- }
- .mainImage {
-    display: none !important; 
   }
- /* .mainImage{
+
+  .mainImage {
+    display: none !important;
+  }
+
+  /* .mainImage{
   display: none !important;
  } */
 
@@ -298,10 +350,11 @@ padding: 18px 0px;
     width: 20%;
     height: 25%;
   }
-  .teamItem{
+
+  .teamItem {
     margin: 0px auto !important;
     text-align: center !important;
- }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -309,10 +362,11 @@ padding: 18px 0px;
     width: 15%;
     height: 25%;
   }
-  .teamItem{
+
+  .teamItem {
     margin: 0px auto !important;
     text-align: center !important;
- }
+  }
 
 }
 
@@ -348,12 +402,18 @@ padding: 18px 0px;
     height: auto;
     position: relative;
   }
-  .teamItem{
+
+  .teamItem {
     margin: 0px auto !important;
     text-align: center !important;
- }
+  }
+
   .main-panel {
     margin-left: 0;
+  }
+
+  .team-er {
+    margin: auto 11px;
   }
 }
 
@@ -490,37 +550,37 @@ padding: 18px 0px;
 
 /* MAIN */
 /* CONTENT */
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 768px) {
-  .teamItem{
+  .teamItem {
     margin: 0px auto !important;
     text-align: center !important;
- }
+  }
+
+  .team-er {
+    margin: auto 11px;
+  }
 
   .d-flex {
     /* Replace 'd-flex' with your desired class */
-    display: block; /* Or any other display property as per your requirement */
+    display: block;
+    /* Or any other display property as per your requirement */
   }
+
   .w-75 {
     /* Replace 'w-75' with your desired class */
-    width: 100%; /* Set width to 100% when screen width is below 768px */
+    width: 100%;
+    /* Set width to 100% when screen width is below 768px */
   }
 
 
   #sidebar {
     width: 200px;
   }
-.sm-12{
-  width: 100%;
-}
+
+  .sm-12 {
+    width: 100%;
+  }
+
   #content {
     width: calc(100% - 60px);
     left: 200px;
@@ -531,14 +591,13 @@ padding: 18px 0px;
   }
 }
 
-
-
-
-
-
 @media screen and (max-width: 576px) {
   #content nav form .form-input input {
     display: none;
+  }
+
+  .team-er {
+    margin: auto 11px;
   }
 
   #content nav form .form-input button {
@@ -582,22 +641,25 @@ padding: 18px 0px;
   #content main .table-data .todo .todo-list {
     min-width: 420px;
   }
-  .teamItem{
+
+  .teamItem {
     margin: 0px auto !important;
     text-align: center !important;
- }
+  }
 }
 
-table{
-  border: 1px solid black !important; 
+table {
+  border: 1px solid black !important;
 
 }
-th{
-  border: 1px solid black !important; 
+
+th {
+  border: 1px solid black !important;
 
 }
+
 td {
-  border: 1px solid black !important; 
+  border: 1px solid black !important;
 
 }
 
@@ -606,11 +668,14 @@ td {
 .bi {
   color: tomato;
 }
+
 /* Add this class to your styles */
 .custom-play-icon {
   color: rgb(255, 0, 34);
-  font-size: 24px; /* set your desired font size */
+  font-size: 24px;
+  /* set your desired font size */
 }
+
 /* Add this to your CSS or in-line style */
 .modal {
   position: fixed;
@@ -618,7 +683,8 @@ td {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -632,32 +698,38 @@ td {
 }
 
 /* You may need to adjust styles based on your specific design requirements */
-.tes{
+.tes {
   width: 31% !important;
 }
-.maincds{
+
+.maincds {
   right: 10%;
 }
-.teslast{
+
+.teslast {
   width: 31% !important;
 
 }
-.componentStyle{
+
+.componentStyle {
   padding: 10px 0px;
   margin: 10px 0px;
 }
-.programs{
+
+.programs {
   background-color: transparent !important;
 }
-.progmain{
+
+.progmain {
   background-image: url("../../public/imgages/se.jpg");
   background-repeat: no-repeat;
-  background-size: cover;  
+  background-size: cover;
   background-position: center center;
   position: relative;
   padding-bottom: 2px;
 }
-.leson{
+
+.leson {
   background: #E5E6E6;
   width: 92%;
 
@@ -669,44 +741,45 @@ td {
 
 /* Frame 218 */
 
-.leason-box{
+.leason-box {
   box-sizing: border-box;
 
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 21.8309px 109.155px;
-gap: 15.59px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 21.8309px 109.155px;
+  gap: 15.59px;
 
-position: absolute;
-width: 425px;
-height: 325px;
+  position: absolute;
+  width: 425px;
+  height: 325px;
 
-background: #E5E6E6;
-border: 2px solid #1F2937;
-border-radius: 8px;
+  background: #E5E6E6;
+  border: 2px solid #1F2937;
+  border-radius: 8px;
 }
 
-
-
-
-
-
-
-
-.seminer_header{
+.seminer_header {
   margin: 0px auto;
   text-align: center;
 }
-.main-blogs{
-margin:0px auto;
+
+.main-blogs {
+  margin: 0px auto;
 }
-.linkbtns{
+
+.linkbtns {
   text-decoration: none !important;
 }
 
 
 
 
+.social-links {
+  display: inline;
+}
 
+.social-links a {
+  margin-right: 0px; /* Adjust as needed */
+}

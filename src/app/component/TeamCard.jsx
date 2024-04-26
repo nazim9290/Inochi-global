@@ -1,16 +1,19 @@
 // "use client"
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { FacebookOutlined, GoogleOutlined, LinkedinOutlined, TwitterOutlined, YoutubeOutlined } from '@ant-design/icons';
 
 const TeamCard = ({ data }) => {
   const [isHovered, setIsHovered] = useState(false);
-// console.log(data.image.url)
+  // console.log(data.image.url)
+
+
   return (
-    <div className=''>
+    <div className='team-t row'>
       {data.image ? (
         <>
           <div className="my-5 ">
-            <div className="row my-lg-4">
+            <div className="row my-lg-4 team-er">
               <div
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
@@ -30,6 +33,14 @@ const TeamCard = ({ data }) => {
                   >
                     <p>{data.name}</p>
                     <p>{data.designation}</p>
+
+                    <div className="social-links">
+                    <a href={data.twiter}><TwitterOutlined /></a>
+                    <a href={data.facebook}><FacebookOutlined /></a>
+                    <a href={data.email}><GoogleOutlined /></a>
+                    <a href={data.linkdin}><LinkedinOutlined /></a>
+                    <a href={data.youtube}><YoutubeOutlined /></a>
+                  </div>
                   </div>
                 )}
               </div>
