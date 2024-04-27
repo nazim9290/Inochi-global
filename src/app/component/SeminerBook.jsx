@@ -21,7 +21,7 @@ const SeminerBook = () => {
         try {
             setLoading(true);
 
-            const { data } = await axios.post("http://45.77.247.238:5000/api/seminer-book", {
+            const { data } = await axios.post("/api/seminer-book", {
                 phone,
                 name,
                 email
@@ -52,8 +52,8 @@ const SeminerBook = () => {
             <div>
                 <h3 className="text-info text-center my-5" style={{ marginTop: '7%' }}>
                 <b className="my-5">Book Seminer</b></h3>
-                {errorMessage}
-                {successMessage }
+                {/* {errorMessage} */}
+                {/* {successMessage } */}
 
                 <div className="wrapper1 card border border-white">
                     <form className="needs-validation text-center"

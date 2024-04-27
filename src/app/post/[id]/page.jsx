@@ -66,7 +66,7 @@ const Page = () => {
 // console.log(sitelink)
   const fetchPost = useCallback(async () => {
     try {
-      const { data } = await axios.get(`http://45.77.247.238:5000/api/singleblogs/${id}`);
+      const { data } = await axios.get(`/api/singleblogs/${id}`);
       setPost(data.blog);
     } catch (err) {
       console.log(err);
@@ -99,7 +99,7 @@ const Page = () => {
   title={'sharing happiness'} 
   url={sitelink}  // Pass sitelink variable here
 
-  socialTypes= {['facebook','twitter']}
+  socialTypes= {['facebook']}
 />
         </div>
       
