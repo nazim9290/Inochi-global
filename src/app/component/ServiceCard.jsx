@@ -118,7 +118,7 @@ const ServiceCard = ({ data }) => {
                     <div className="my-5">
                         <div className="row my-lg-4">
                             <div onClick={handleCardClick} style={{ cursor: 'pointer' }}>
-                                <div className="card shadow rounded">
+                                <div className="card shadow rounded blogC">
                                     <div className="card-body text-center">
                                         <Image src={data.image.url} alt="Bootstrap" 
                                         width={200} height={200} /><br />
