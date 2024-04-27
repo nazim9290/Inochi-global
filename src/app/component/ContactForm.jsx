@@ -49,7 +49,7 @@ const ContactForm = () => {
         }
         setLoading(true);
         try {
-            const { data } = await axios.post("http://45.77.247.238:5000/api/contact", {
+            const { data } = await axios.post("http://server.inochieducation.com/api/contact", {
                 name,
                 phone,
                 email,
