@@ -17,8 +17,6 @@ const Register = () => {
       <MainBanner title="Register" />
 
 <RegistrationForm/>
-
-      {/* from end */}
       <Subsscribe />
       <Fotter />
 

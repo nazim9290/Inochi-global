@@ -62,7 +62,9 @@ const Page = () => {
   const segments = pathname.split('/');
   const id = segments[segments.length - 1];
 
-  const sitelink = `https://inochieducation.com${pathname}`;
+  // const sitelink = `https://inochieducation.com${pathname}`;
+  const sitelink = `https://inochieducation.com${pathname.split('/').slice(0, -1).join('/')}`;
+
 // console.log(sitelink)
   const fetchPost = useCallback(async () => {
     try {

@@ -13,7 +13,7 @@ const SeminerCard = ({ data }) => {
     }
     return (
         <>
-            <div className="card  shadow rounded">
+            <div className="card  shadow rounded ">
                 <div className="card-body text-center">
 
                     
@@ -24,8 +24,6 @@ const SeminerCard = ({ data }) => {
                         width={200}
                         alt="inochi"
                     />
-
-
                     <br />
                     <h3>{data.title}</h3>
                     <p className="text-center mb-5">

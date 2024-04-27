@@ -793,3 +793,8 @@ td {
   min-height: 500px !important;
   overflow: hidden !important;
 }
+.team-s{
+  max-height: 300px !important;
+  min-height: 300px !important;
+  overflow: hidden !important;
+}

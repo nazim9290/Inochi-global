@@ -15,13 +15,11 @@ const SeminarSection = () => {
   const fetchUserPosts = async () => {
     try {
       const { data } = await axios.get("api/seminar");
-      // console.log("user posts => ", data.seminer);
-      setLoading(false); // Set loading to false when data is fetched
-
+      setLoading(false);
       setBlogs(data.seminer);
     } catch (err) {
       console.log(err);
-      setLoading(false); // Set loading to false when data is fetched
+      setLoading(false);
 
     }
   };
@@ -37,7 +35,7 @@ const SeminarSection = () => {
           <div className="row">
             {
               blogs.map(item => (
-                <div key={item._id} className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4"
+                <div key={item._id} className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 team-s"
                 >
                   <SeminerCard data={item} />
                 </div>
