@@ -11,6 +11,8 @@ a {
 
 }
 
+
+
 .wrapperTop {
   padding: 0px 5px;
 }
@@ -786,6 +788,8 @@ td {
 .social-links a {
   margin-right: 4px; /* Adjust as needed */
 }
-.blogC{
-  max-height: 375px !important;
+.blogC {
+  max-height: 500px !important;
+  min-height: 500px !important;
+  overflow: hidden !important;
 }

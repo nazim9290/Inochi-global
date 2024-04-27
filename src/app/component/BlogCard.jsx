@@ -24,10 +24,10 @@ const BlogCard = ({ data }) => {
   return (
     <>
       {data.image && (
-        <div className="my-5 blogC">
+        <div className="my-5 ">
           <div className="row my-lg-4">
             <div onClick={handleCardClick} style={{ cursor: 'pointer' }}>
-              <div className="card shadow rounded">
+              <div className="card shadow rounded blogC">
                 <div className="card-body text-center">
                   <Image src={data.image.url} alt="Bootstrap" width={250} height={250} /><br />
                   <p className="text-center mb-2"><b>{data.title}</b></p>
