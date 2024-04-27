@@ -62,8 +62,8 @@ const Page = () => {
   const segments = pathname.split('/');
   const id = segments[segments.length - 1];
 
-  const sitelink = `http://inochieducation.com${pathname}`;
-console.log(sitelink)
+  const sitelink = `https://inochieducation.com${pathname}`;
+// console.log(sitelink)
   const fetchPost = useCallback(async () => {
     try {
       const { data } = await axios.get(`http://45.77.247.238:5000/api/singleblogs/${id}`);
