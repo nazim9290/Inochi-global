@@ -24,12 +24,13 @@ const MainCarusel = () => {
     return images.map(item => (
       <Carousel.Item key={item.id}>
      <Image
-          className="d-block w-100 mainImage"
+          className="d-block w-100 mainImaget"
           src={item.image.url}
           height={300}
           width={1360}
           alt={item}
         /> 
+        {/* mainImage  mainImaget*/}
          <Image
           className="d-block w-100 mainImagerep"
           src={item.image.url}

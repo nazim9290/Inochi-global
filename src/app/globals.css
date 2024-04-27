@@ -187,7 +187,9 @@ h1 h2 {
   .mainImage {
     display: none !important;
   }
-
+.mainImaget{
+  display: none !important;
+}
   .team-er {
     margin: auto 11px;
   }
@@ -772,6 +774,7 @@ td {
 .linkbtns {
   text-decoration: none !important;
 }
+/* mainImaget */
 
 
 
@@ -782,4 +785,7 @@ td {
 
 .social-links a {
   margin-right: 4px; /* Adjust as needed */
+}
+.blogC{
+  max-height: 375px !important;
 }

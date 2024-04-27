@@ -24,7 +24,7 @@ const BlogCard = ({ data }) => {
   return (
     <>
       {data.image && (
-        <div className="my-5">
+        <div className="my-5 blogC">
           <div className="row my-lg-4">
             <div onClick={handleCardClick} style={{ cursor: 'pointer' }}>
               <div className="card shadow rounded">
