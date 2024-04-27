@@ -26,7 +26,7 @@ const MainCarusel = () => {
      <Image
           className="d-block w-100 mainImaget"
           src={item.image.url}
-          height={406}
+          height={500}
           width={1360}
           alt={item}
         /> 
