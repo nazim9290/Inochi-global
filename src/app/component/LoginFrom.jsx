@@ -27,7 +27,7 @@ const LoginForm = () => {
     try {
       e.preventDefault();
       setLoading(true);
-// console.log(phone,password)
+ console.log(email,password)
       
       // Perform login logic (e.g., send data to the server)
       const { data } = await axios.post("/api/login", {
