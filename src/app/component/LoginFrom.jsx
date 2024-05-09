@@ -60,7 +60,7 @@ const LoginForm = () => {
                <input
                         type="name"
                         className="form-control"
-                        placeholder="Enter your Mobile number"
+                        placeholder="enter your email"
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
                         required
