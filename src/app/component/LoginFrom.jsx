@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import { UserContext } from "../../context";
 
 const LoginForm = () => {
-  const [phone, setPhone] = useState('');
+  const [email, setPhone] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -28,10 +28,11 @@ const LoginForm = () => {
       e.preventDefault();
       setLoading(true);
 // console.log(phone,password)
+      
       // Perform login logic (e.g., send data to the server)
       const { data } = await axios.post("/api/login", {
         password,
-        phone
+        email
       })
       console.log(data)
       setState({
@@ -56,17 +57,17 @@ const LoginForm = () => {
     <div className="wrapper1 card border border-white">
         <form  className="needs-validation" noValidate onSubmit={handleSubmit}>
             <div className="mb-3">
-                <label className="form-label">Phone</label>
+                <label className="form-label">Email</label>
                <input
                         type="name"
                         className="form-control"
                         placeholder="enter your email"
-                        value={phone}
+                        value={email}
                         onChange={(e) => setPhone(e.target.value)}
                         required
                     />
                 <div className="invalid-feedback">
-                    Please enter a phone.
+                    Please enter a email.
                 </div>
             </div>
             <div className="mb-3">
