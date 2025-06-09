@@ -1,8 +1,7 @@
-"use client"
+"use client";
 import { useState, createContext, useEffect } from "react";
 import axios from "axios";
-import { useRouter } from 'next/navigation'
-
+import { useRouter } from "next/navigation";
 
 const UserContext = createContext();
 
@@ -12,35 +11,54 @@ const UserProvider = ({ children }) => {
     token: "",
   });
 
+  const router = useRouter();
+
+  // API base URL - from .env
+  const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+
   useEffect(() => {
-    setState(JSON.parse(window.localStorage.getItem("auth")) || { user: {}, token: "" }); // Handle case when there's no data in localStorage
+    const auth = JSON.parse(window.localStorage.getItem("auth"));
+    if (auth) {
+      setState(auth);
+    }
   }, []);
 
-  const router = useRouter();
-  const token = state.token || "";
-  axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
-
-  axios.interceptors.request.use(request => {
-    if (request.method === 'put' || request.method === 'PUT') {
-      console.log('Starting PUT Request', request);
+  useEffect(() => {
+    const token = state.token;
+    if (token) {
+      axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
     }
-    return request;
-  });
 
-  axios.interceptors.response.use(
-    function (response) {
-      return response;
-    },
-    function (error) {
-      let res = error.response;
-      if (res.status === 401 && res.config && !res.config.__isRetryRequest) {
-        setState({ user: {}, token: "" }); // Reset the state
-        window.localStorage.removeItem("auth");
-        // router.push("/login");
+    // Set base URL globally (optional but useful)
+    axios.defaults.baseURL = API_BASE_URL;
+
+    // Axios interceptors
+    const reqInterceptor = axios.interceptors.request.use((request) => {
+      if (request.method?.toUpperCase() === "PUT") {
+        console.log("Starting PUT Request", request);
       }
-      return Promise.reject(error); // Ensure the error is propagated after handling
-    }
-  );
+      return request;
+    });
+
+    const resInterceptor = axios.interceptors.response.use(
+      (response) => response,
+      (error) => {
+        const res = error.response;
+        if (res?.status === 401 && !res.config?.__isRetryRequest) {
+          setState({ user: {}, token: "" });
+          window.localStorage.removeItem("auth");
+          router.push("/login");
+        }
+        return Promise.reject(error);
+      }
+    );
+
+    // Clean up interceptors when component unmounts
+    return () => {
+      axios.interceptors.request.eject(reqInterceptor);
+      axios.interceptors.response.eject(resInterceptor);
+    };
+  }, [state.token]);
 
   return (
     <UserContext.Provider value={[state, setState]}>

@@ -10,7 +10,9 @@ const Examlist = () => {
     }, []);
     const fetchExamCategory = async () => {
         try {
-          const { data } = await axios.get("http://45.77.247.238:5000/api/get-all-posts");
+          const { data } = await axios.get(
+            "https://api.inochieducation.com/api/get-all-posts"
+          );
           // console.log("user posts => ", data);
           setCategory(data);
         } catch (err) {

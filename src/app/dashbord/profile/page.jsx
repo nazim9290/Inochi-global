@@ -41,76 +41,82 @@ const Profile = () => {
 
 
     const handleImageChange = async (e) => {
-        const file = e.target.files[0];
-        let formData = new FormData();
-        formData.append("image", file);
-        // setUploading(true);
-        try {
-            const response = await axios.post("http://45.77.247.238:5000/api/upload-image-file", formData);
-            if (response && response.data && response.data) {
-                setImage({
-                    url: response.data.url,
-                    public_id: response.data.public_id,
-                });
-                setUploading(false);
-                setSuccessMessage('Image uploaded successfully.');
-            } else {
-                setErrorMessage("Failed to upload image. Please try again.");
-            }
-        } catch (err) {
-            console.error('Error uploading image:', err);
-            setErrorMessage("Failed to upload image. Please try again.");
-        } finally {
-            setUploading(false);
+      const file = e.target.files[0];
+      let formData = new FormData();
+      formData.append("image", file);
+      // setUploading(true);
+      try {
+        const response = await axios.post(
+          "https://api.inochieducation.com/api/upload-image-file",
+          formData
+        );
+        if (response && response.data && response.data) {
+          setImage({
+            url: response.data.url,
+            public_id: response.data.public_id,
+          });
+          setUploading(false);
+          setSuccessMessage("Image uploaded successfully.");
+        } else {
+          setErrorMessage("Failed to upload image. Please try again.");
         }
+      } catch (err) {
+        console.error("Error uploading image:", err);
+        setErrorMessage("Failed to upload image. Please try again.");
+      } finally {
+        setUploading(false);
+      }
     };
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  const userId = state.user._id;
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      const userId = state.user._id;
 
-  try {
-    setLoading(true);
+      try {
+        setLoading(true);
 
-    const payload = {
-      name,
-      email,
-      phone,
-      father,
-      mother,
-      paddress,
-      permanent, // There's a missing state for 'parent' in your useState declarations
-      education,
-      image
+        const payload = {
+          name,
+          email,
+          phone,
+          father,
+          mother,
+          paddress,
+          permanent, // There's a missing state for 'parent' in your useState declarations
+          education,
+          image,
+        };
+        // console.log('Payload:', payload);
+
+        const response = await axios.put(
+          `https://api.inochieducation.com/api/profile-update/${userId}`,
+          payload
+        );
+
+        if (response.data.error) {
+          setErrorMessage(response.data.error); // Handle the error message properly
+          toast.error(data.error);
+
+          setLoading(false);
+        } else {
+          // Update local storage, update user, keep token
+          let auth = JSON.parse(localStorage.getItem("auth"));
+          auth.user = response.data.user;
+          localStorage.setItem("auth", JSON.stringify(auth));
+
+          // Update context
+          setState({ ...state, user: response.data });
+
+          setOk(true);
+          setLoading(false);
+          setSuccessMessage("Profile updated successfully.");
+        }
+      } catch (err) {
+        console.error("Error updating profile:", err);
+        setErrorMessage("Failed to update profile. Please try again.");
+        setLoading(false);
+      }
     };
-    // console.log('Payload:', payload);
-
-    const response = await axios.put(`http://45.77.247.238:5000/api/profile-update/${userId}`, payload);
-
-    if (response.data.error) {
-      setErrorMessage(response.data.error); // Handle the error message properly
-      toast.error(data.error);
-
-      setLoading(false);
-    } else {
-      // Update local storage, update user, keep token
-      let auth = JSON.parse(localStorage.getItem("auth"));
-      auth.user = response.data.user;
-      localStorage.setItem("auth", JSON.stringify(auth));
-      
-      // Update context
-      setState({ ...state, user: response.data });
-      
-      setOk(true);
-      setLoading(false);
-      setSuccessMessage('Profile updated successfully.');
-    }
-  } catch (err) {
-    console.error('Error updating profile:', err);
-    setErrorMessage("Failed to update profile. Please try again.");
-    setLoading(false);
-  }
-};
 
     return (
         <UserRoute>

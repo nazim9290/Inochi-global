@@ -13,7 +13,7 @@
 
 //   const fetchPost = useCallback(async () => {
 //     try {
-//       const { data } = await axios.get(`http://45.77.247.238:5000/api/singleblogs/${id}`);
+//       const { data } = await axios.get(`https://api.inochieducation.com/api/singleblogs/${id}`);
 //       setPost(data.blog);
 //       console.log(data.blog)
 //     } catch (err) {

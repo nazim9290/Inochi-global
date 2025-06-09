@@ -13,7 +13,9 @@ const PlayListAdd = () => {
     }, []);
     const fetchUserPosts = async () => {
         try {
-            const response = await axios.get("http://45.77.247.238:5000/api/video-playlist");
+            const response = await axios.get(
+              "https://api.inochieducation.com/api/video-playlist"
+            );
             setPosts(response.data.video);
         } catch (err) {
             console.log(err);

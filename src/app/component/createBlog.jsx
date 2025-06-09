@@ -21,7 +21,10 @@ const CreateBlog = () => {
     // console.log([...formData]);
     setUploading(true);
     try {
-      const { data } = await axios.post("http://45.77.247.238:5000/api/upload-image-file", formData);
+      const { data } = await axios.post(
+        "https://api.inochieducation.com/api/upload-image-file",
+        formData
+      );
       // console.log("uploaded image => ", data);
       setImage({
         url: data.url,
@@ -33,8 +36,6 @@ const CreateBlog = () => {
       setUploading(false);
     }
   };
-  
-
 
   const handleCategoryChange = (event) => {
     setCategory(event.target.value);
@@ -42,17 +43,20 @@ const CreateBlog = () => {
 
   const handleSubmit = async () => {
     try {
-      const { data } = await axios.post("http://45.77.247.238:5000/api/create-blog", {
-        image,
-        title,
-        content,
-        category,
-      });
+      const { data } = await axios.post(
+        "https://api.inochieducation.com/api/create-blog",
+        {
+          image,
+          title,
+          content,
+          category,
+        }
+      );
       setSuccessMessage("Blog created successfully!");
-      setErrorMessage('');
+      setErrorMessage("");
     } catch (err) {
       console.error("Error:", err);
-      setSuccessMessage('');
+      setSuccessMessage("");
       setErrorMessage("Failed to create blog. Please try again.");
     }
   };

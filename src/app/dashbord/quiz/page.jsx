@@ -10,7 +10,9 @@ const QuizPage = () => {
   const router=useRouter();
   const fetchQuizData = useCallback(async () => {
     try {
-      const response = await axios.get('http://45.77.247.238:5000/api/catagories/vocabulary/');
+      const response = await axios.get(
+        "https://api.inochieducation.com/api/catagories/vocabulary/"
+      );
       setQuizData(response.data.map(item => ({ ...item, selectedOption: null })));
     } catch (error) {
       console.error('Error fetching quiz data:', error);

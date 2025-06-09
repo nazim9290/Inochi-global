@@ -25,12 +25,15 @@ const RegistrationForm = () => {
         try {
             setLoading(true);
 
-            const { data } = await axios.post("api/register", {
+            const { data } = await axios.post(
+              "https://api.inochieducation.com/api/register",
+              {
                 phone,
                 password,
                 name,
-                email
-            });
+                email,
+              }
+            );
             // console.log(data.error)
             if (data.error) {
                 toast.error(data.error);
