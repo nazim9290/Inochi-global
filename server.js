@@ -15,6 +15,22 @@ app
     createServer((req, res) => {
       const parsedUrl = parse(req.url, true);
       const { pathname, query } = parsedUrl;
+
+      // ✅ Serve static files from /public
+      const filePath = join(__dirname, "public", pathname);
+      if (existsSync(filePath)) {
+        const stream = createReadStream(filePath);
+        stream.on("open", () => {
+          stream.pipe(res);
+        });
+        stream.on("error", (err) => {
+          res.statusCode = 500;
+          res.end("Internal Server Error");
+        });
+        return;
+      }
+
+      // 🔁 Let Next.js handle all other requests
       handle(req, res, parsedUrl);
       console.log("pathname", pathname);
     }).listen(port, (err) => {
